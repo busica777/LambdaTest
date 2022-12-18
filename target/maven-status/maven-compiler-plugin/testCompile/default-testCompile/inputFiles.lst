@@ -1,0 +1,14 @@
+/Users/sergiopele/IdeaProjects/LambdaTest/src/test/java/utils/ConfigReader.java
+/Users/sergiopele/IdeaProjects/LambdaTest/src/test/java/utils/Log.java
+/Users/sergiopele/IdeaProjects/LambdaTest/src/test/java/steps/PageInitializer.java
+/Users/sergiopele/IdeaProjects/LambdaTest/src/test/java/utils/ExcelReader.java
+/Users/sergiopele/IdeaProjects/LambdaTest/src/test/java/utils/BaseClass.java
+/Users/sergiopele/IdeaProjects/LambdaTest/src/test/java/pages/HomePage.java
+/Users/sergiopele/IdeaProjects/LambdaTest/src/test/java/pages/UserRegistrationPage.java
+/Users/sergiopele/IdeaProjects/LambdaTest/src/test/java/steps/LogIn.java
+/Users/sergiopele/IdeaProjects/LambdaTest/src/test/java/runners/FailedRunner.java
+/Users/sergiopele/IdeaProjects/LambdaTest/src/test/java/utils/Constants.java
+/Users/sergiopele/IdeaProjects/LambdaTest/src/test/java/steps/UserRegistration.java
+/Users/sergiopele/IdeaProjects/LambdaTest/src/test/java/steps/Hooks.java
+/Users/sergiopele/IdeaProjects/LambdaTest/src/test/java/pages/LogInPage.java
+/Users/sergiopele/IdeaProjects/LambdaTest/src/test/java/runners/SmokeRunner.java
