@@ -1,0 +1,29 @@
+Index: src/test/resources/config/config.properties
+===================================================================
+diff --git a/src/test/resources/config/config.properties b/src/test/resources/config/config.properties
+deleted file mode 100644
+--- a/src/test/resources/config/config.properties	(revision c43948ad831a452eba2f8364f7486693e8adeef0)
++++ /dev/null	(revision c43948ad831a452eba2f8364f7486693e8adeef0)
+@@ -1,21 +0,0 @@
+-url=https://ecommerce-playground.lambdatest.io/index.php?route=common/home
+-browser=chrome
+-
+-
+-
+-#user registration data
+-firstName=Samanta
+-lastName=Aroget
+-email=aroget@gmail.com
+-telephone=+12345678
+-password=12345678
+-confirmPassword=12345678
+-successUserRegistrationMSG=Congratulations! Your new account has been successfully created!
+-
+-#user Login data
+-validLogInPassword=12345678
+-validLogInEmail=aroget@gmail.com
+-myAccountURL=https://ecommerce-playground.lambdatest.io/index.php?route=account/account
+-
+-#
+-wishedCategory=Software
+\ No newline at end of file
