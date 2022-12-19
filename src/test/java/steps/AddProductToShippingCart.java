@@ -3,9 +3,9 @@ package steps;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import utils.BaseClass;
+import utils.ConfigReader;
 
-import static steps.PageInitializer.homePage;
-import static steps.PageInitializer.myAccountPage;
+import static steps.PageInitializer.*;
 
 public class AddProductToShippingCart extends BaseClass {
 	@When("User clicks on Shop by Category option")
@@ -15,13 +15,15 @@ public class AddProductToShippingCart extends BaseClass {
 	
 	@When("User select category for selecting product to purchase")
 	public void user_select_category_for_selecting_product_to_purchase() {
-		click.accept(iterateListElements
-				(homePage.getShopByCategorywebElements(),"wishedCategory"));
+		click.accept(retrieveElementFromListByConfigReader
+				(homePage.getShopByCategorywebElements(), "ShopByCategoryList"));
 	}
 	
 	@When("User from Product Page select any item")
 	public void user_from_product_page_select_any_item() {
-	
+		click.accept(chooseElementFromListOfProductsByConfigReaderOrClickNextPage
+				(categoryProductsPage.getListOfProducts(),"ItemFromProductListToBuy",
+						categoryProductsPage.getNextProductListPage()));
 	}
 	
 	@When("User clicks on Add to Cart button from Category Page")

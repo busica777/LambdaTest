@@ -120,15 +120,32 @@ public class BaseClass {
 	}
 	
 	
-	/**
-	 * value - WebElements
-	 * keys - String (extracted text from elements)
-	 **/
-	public static WebElement iterateListElements
+	public static WebElement retrieveElementFromListByConfigReader
 	(List<WebElement> elements, String target) {
 		return elements.stream().filter(s -> s.getText()
 				.contains(ConfigReader.getPropertyValue
 				.apply(target))).findFirst().orElse(null);
+	}
+	
+	public static WebElement chooseElementFromListOfProductsByConfigReaderOrClickNextPage
+	/*
+	this method to iterate element from a list of products by target key
+	(ItemFromProductListToBuy in config.properties file)
+	provide list of products, target key and webelement to pull next product list page
+	*/
+			(List<WebElement>elements,String target,WebElement nextPage){
+		WebElement result;
+		ConfigReader.loadProperty(Constants.CONFIGURATION_FILE_PATH);
+		while(true){
+			result=elements.stream()
+							.filter(s -> s.getText()
+							.contains(ConfigReader.getPropertyValue.apply(target)))
+							.findFirst()
+							.orElse(null);
+			if(result!=null) break;
+			click.accept(nextPage);
+		}
+		return result;
 	}
 	
 	
