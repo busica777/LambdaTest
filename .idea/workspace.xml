@@ -5,15 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46ff00aa-ff5b-412f-ab70-09fa77c1281d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/CategoryProductsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/logfile.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/CategoryProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CategoryProductsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/AddProductToShippingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/AddProductToShippingCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/PageInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/PageInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/BaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-runners.SmokeRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-runners.SmokeRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/runners.SmokeRunner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/runners.SmokeRunner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/config/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/CategoryProductsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/CategoryProductsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/AddProductToShippingCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/AddProductToShippingCart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/BaseClass.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,12 +54,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/sergiopele/IdeaProjects/LambdaTest"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager" selected="JUnit.SmokeRunner">
     <configuration name="AddProductToShippingCart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="steps.AddProductToShippingCart" />

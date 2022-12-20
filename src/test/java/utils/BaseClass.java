@@ -4,14 +4,13 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.junit.Assert;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
@@ -19,12 +18,9 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
-import java.util.function.BiConsumer;
-import java.util.function.Consumer;
-import java.util.function.Supplier;
+import java.util.function.*;
 
 import static steps.PageInitializer.initializePages;
 
@@ -87,6 +83,8 @@ public class BaseClass {
 	public static BiConsumer<String, String> assertThatText = (expected, actual)
 			-> Assert.assertEquals("text does NOT match", expected, actual);
 	
+	public static Predicate<WebElement> assertElementIsVisible = WebElement::isDisplayed;
+	
 	public static void quitBrowser() {
 		Log.info("My test case is about to complete");
 		Log.endTestCase("This is my login test again");
@@ -119,35 +117,27 @@ public class BaseClass {
 		return sdf.format(date);
 	}
 	
+	public static Supplier<JavascriptExecutor> getJavaScriptExecutor = ()
+			-> (JavascriptExecutor) (driver);
 	
-	public static WebElement retrieveElementFromListByConfigReader
-	(List<WebElement> elements, String target) {
-		return elements.stream().filter(s -> s.getText()
-				.contains(ConfigReader.getPropertyValue
-				.apply(target))).findFirst().orElse(null);
+	public static Consumer<WebElement> scrollIntoView = (element)
+			-> getJavaScriptExecutor.get().executeScript("arguments[0].scrollIntoView();", element);
+	
+	public static Supplier<Actions> getActions = ()
+			-> new Actions(driver);
+	public static Consumer<WebElement> moveCursorToElement = (element)
+			-> getActions.get().moveToElement(element).perform();
+	
+	public static Select dropDown(WebElement element) {
+		return new Select(element);
 	}
 	
-	public static WebElement chooseElementFromListOfProductsByConfigReaderOrClickNextPage
-	/*
-	this method to iterate element from a list of products by target key
-	(ItemFromProductListToBuy in config.properties file)
-	provide list of products, target key and webelement to pull next product list page
-	*/
-			(List<WebElement>elements,String target,WebElement nextPage){
-		WebElement result;
-		ConfigReader.loadProperty(Constants.CONFIGURATION_FILE_PATH);
-		while(true){
-			result=elements.stream()
-							.filter(s -> s.getText()
-							.contains(ConfigReader.getPropertyValue.apply(target)))
-							.findFirst()
-							.orElse(null);
-			if(result!=null) break;
-			click.accept(nextPage);
-		}
-		return result;
-	}
+	public static BiConsumer<WebElement, Integer> dropDownselectByIndex = (element, index)
+			-> dropDown(element).selectByIndex(index);
 	
+	public static Consumer<WebElement>visibilityOfElementLocated = (element)
+			-> getWait.get().until
+					(ExpectedConditions.visibilityOf(element));
 	
 }
 
