@@ -4,8 +4,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import utils.BaseClass;
 
-import static steps.PageInitializer.categoryProductsPage;
-import static steps.PageInitializer.myAccountPage;
+import static steps.PageInitializer.*;
 
 public class AddProductToShippingCart extends BaseClass {
 	@When("User clicks on Shop by Category option")
