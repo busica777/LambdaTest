@@ -116,7 +116,6 @@ public class BaseClass {
 		SimpleDateFormat sdf = new SimpleDateFormat(pattern);
 		return sdf.format(date);
 	}
-	
 	public static Supplier<JavascriptExecutor> getJavaScriptExecutor = ()
 			-> (JavascriptExecutor) (driver);
 	

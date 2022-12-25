@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 		glue = "steps",
 		
 		dryRun = false,
-		tags = "@shoppingCart",
+		tags = "@login",
 		
 		monochrome = true,
 		

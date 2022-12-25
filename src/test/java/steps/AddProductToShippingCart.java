@@ -4,6 +4,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import utils.BaseClass;
 
+
 import static steps.PageInitializer.*;
 
 public class AddProductToShippingCart extends BaseClass {

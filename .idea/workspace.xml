@@ -4,10 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46ff00aa-ff5b-412f-ab70-09fa77c1281d" name="Changes" comment="">
+    <list default="true" id="46ff00aa-ff5b-412f-ab70-09fa77c1281d" name="Changes" comment="here i added some things">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/logfile.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/SmokeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/SmokeRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/AddProductToShippingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/AddProductToShippingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/failed.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/failed.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LogInPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LogInPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/SmokeRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/SmokeRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/LogIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/LogIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utils/BaseClass.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +32,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -97,6 +111,18 @@
       <option name="presentableId" value="Default" />
       <updated>1671057151644</updated>
     </task>
+    <task id="LOCAL-00001" summary="here i added some things">
+      <created>1671857249890</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671857249890</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="here i added some things" />
+    <option name="LAST_COMMIT_MESSAGE" value="here i added some things" />
   </component>
 </project>
