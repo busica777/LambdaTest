@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3886759000,
+              "duration": 4762009000,
               "status": "passed"
             },
             "line": 4,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-23T06:30:30.972Z",
+        "start_timestamp": "2023-01-23T06:47:35.136Z",
         "line": 7,
         "name": "api test to creating new employee",
         "description": "",
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 37721000,
+              "duration": 41686000,
               "status": "passed"
             },
             "line": 8,
@@ -76,7 +76,7 @@
           },
           {
             "result": {
-              "duration": 100527000,
+              "duration": 131893000,
               "status": "passed"
             },
             "line": 9,
@@ -88,7 +88,7 @@
           },
           {
             "result": {
-              "duration": 73949000,
+              "duration": 106468000,
               "status": "passed"
             },
             "line": 10,
@@ -106,7 +106,7 @@
           },
           {
             "result": {
-              "duration": 114442000,
+              "duration": 161220000,
               "status": "passed"
             },
             "line": 11,
@@ -124,7 +124,7 @@
           },
           {
             "result": {
-              "duration": 31558000,
+              "duration": 42383000,
               "status": "passed"
             },
             "line": 12,
@@ -156,7 +156,7 @@
         "steps": [
           {
             "result": {
-              "duration": 99824000,
+              "duration": 105947000,
               "status": "passed"
             },
             "line": 4,
@@ -169,7 +169,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-23T06:30:35.383Z",
+        "start_timestamp": "2023-01-23T06:47:40.644Z",
         "line": 15,
         "name": "api test to retrieve created employee",
         "description": "",
@@ -179,7 +179,7 @@
         "steps": [
           {
             "result": {
-              "duration": 17696000,
+              "duration": 24442000,
               "status": "passed"
             },
             "line": 16,
@@ -191,7 +191,7 @@
           },
           {
             "result": {
-              "duration": 113648000,
+              "duration": 157235000,
               "status": "passed"
             },
             "line": 17,
@@ -203,7 +203,7 @@
           },
           {
             "result": {
-              "duration": 2994000,
+              "duration": 6274000,
               "status": "passed"
             },
             "line": 18,
@@ -221,7 +221,7 @@
           },
           {
             "result": {
-              "duration": 46573000,
+              "duration": 35664000,
               "status": "passed"
             },
             "line": 19,
@@ -239,7 +239,7 @@
           },
           {
             "result": {
-              "duration": 36013000,
+              "duration": 26361000,
               "status": "passed"
             },
             "line": 20,
@@ -295,7 +295,7 @@
         "steps": [
           {
             "result": {
-              "duration": 107663000,
+              "duration": 134925000,
               "status": "passed"
             },
             "line": 4,
@@ -308,7 +308,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-23T06:30:35.727Z",
+        "start_timestamp": "2023-01-23T06:47:41.029Z",
         "line": 25,
         "name": "api test to partially update created employee",
         "description": "",
@@ -318,7 +318,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5702000,
+              "duration": 6909000,
               "status": "passed"
             },
             "line": 26,
@@ -346,7 +346,7 @@
           },
           {
             "result": {
-              "duration": 164000000,
+              "duration": 196278000,
               "status": "passed"
             },
             "line": 29,
@@ -358,7 +358,7 @@
           },
           {
             "result": {
-              "duration": 4473000,
+              "duration": 22460000,
               "status": "passed"
             },
             "line": 30,
@@ -376,7 +376,7 @@
           },
           {
             "result": {
-              "duration": 41025000,
+              "duration": 67858000,
               "status": "passed"
             },
             "line": 31,

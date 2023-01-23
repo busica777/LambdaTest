@@ -10,6 +10,9 @@ import utils.APIConstants;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.function.BiConsumer;
+import java.util.function.BiPredicate;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 import static APISteps.CreateNewEmployee.*;
@@ -49,17 +52,9 @@ public class RetrieveCreatedEmployee {
 		List<Map<String, String>> expectedData = dataTable.asMaps();
 		//to get all the keys and values of employee object, we use jsonPath.get method
 		Map<String, String> actualData = response.body().jsonPath().get(empObject);
+		BiConsumer<String, String> matcher = Assert::assertEquals;
 		
-		
-		for (Map<String, String> map : expectedData) {
-			//it returns all the keys
-			Set<String> keys = map.keySet();
-			for (String key : keys) {
-				String expectedValue = map.get(key);
-				String actualValue = actualData.get(key);
-				Assert.assertEquals(expectedValue, actualValue);
-			}
-		}
+		expectedData.forEach(s -> s.forEach((k, v) -> matcher.accept(v,actualData.get(k))));
 		
 	}
 }

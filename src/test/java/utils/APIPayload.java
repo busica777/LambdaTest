@@ -33,7 +33,7 @@ public class APIPayload {
 	public static String partialEmployeeUpdating(io.cucumber.datatable.DataTable dataTable) {
 		List<Map<String, String>> dataToUpdate = dataTable.asMaps();
 		JSONObject obj = new JSONObject();
-		dataToUpdate.forEach(s -> s.forEach((key, value) -> obj.put(key, value)));
+		dataToUpdate.forEach(map -> map.forEach((key, value) -> obj.put(key, value)));
 		obj.put("employee_id", employeeID);
 		return obj.toJSONString();
 	}
