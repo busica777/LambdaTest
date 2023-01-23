@@ -17,5 +17,6 @@ public class PageInitializer {
 		myAccountPage = new MyAccountPage();
 		categoryProductsPage = new CategoryProductsPage();
 		
+		
 	}
 }
