@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3923278000,
+              "duration": 3886759000,
               "status": "passed"
             },
             "line": 4,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-23T04:16:25.173Z",
+        "start_timestamp": "2023-01-23T06:30:30.972Z",
         "line": 7,
         "name": "api test to creating new employee",
         "description": "",
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9513000,
+              "duration": 37721000,
               "status": "passed"
             },
             "line": 8,
@@ -76,7 +76,7 @@
           },
           {
             "result": {
-              "duration": 109104000,
+              "duration": 100527000,
               "status": "passed"
             },
             "line": 9,
@@ -88,7 +88,7 @@
           },
           {
             "result": {
-              "duration": 104101000,
+              "duration": 73949000,
               "status": "passed"
             },
             "line": 10,
@@ -106,7 +106,7 @@
           },
           {
             "result": {
-              "duration": 112683000,
+              "duration": 114442000,
               "status": "passed"
             },
             "line": 11,
@@ -124,7 +124,7 @@
           },
           {
             "result": {
-              "duration": 22281000,
+              "duration": 31558000,
               "status": "passed"
             },
             "line": 12,
@@ -156,7 +156,7 @@
         "steps": [
           {
             "result": {
-              "duration": 101607000,
+              "duration": 99824000,
               "status": "passed"
             },
             "line": 4,
@@ -169,7 +169,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-01-23T04:16:29.619Z",
+        "start_timestamp": "2023-01-23T06:30:35.383Z",
         "line": 15,
         "name": "api test to retrieve created employee",
         "description": "",
@@ -179,19 +179,19 @@
         "steps": [
           {
             "result": {
-              "duration": 25497000,
+              "duration": 17696000,
               "status": "passed"
             },
             "line": 16,
-            "name": "request is prepared",
+            "name": "request to retrieve employee is prepared",
             "match": {
-              "location": "APISteps.RetrieveCreatedEmployee.request_is_prepared()"
+              "location": "APISteps.RetrieveCreatedEmployee.request_to_retrieve_employee_is_prepared()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 119506000,
+              "duration": 113648000,
               "status": "passed"
             },
             "line": 17,
@@ -203,7 +203,7 @@
           },
           {
             "result": {
-              "duration": 6308000,
+              "duration": 2994000,
               "status": "passed"
             },
             "line": 18,
@@ -221,7 +221,7 @@
           },
           {
             "result": {
-              "duration": 39659000,
+              "duration": 46573000,
               "status": "passed"
             },
             "line": 19,
@@ -239,7 +239,7 @@
           },
           {
             "result": {
-              "duration": 22414000,
+              "duration": 36013000,
               "status": "passed"
             },
             "line": 20,
@@ -277,6 +277,123 @@
                 ]
               }
             ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "before each request generate token",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 107663000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "JWT is generated",
+            "match": {
+              "location": "APISteps.GenerateTokenStep.jwt_is_generated()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-23T06:30:35.727Z",
+        "line": 25,
+        "name": "api test to partially update created employee",
+        "description": "",
+        "id": "api-workflow-test;api-test-to-partially-update-created-employee",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5702000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "request to update employee is prepared and body contains information for updating",
+            "match": {
+              "location": "APISteps.PartialEmployeeUpdate.request_to_update_employee_is_prepared_and_body_contains_information_for_updating(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "emp_middle_name",
+                  "emp_lastname",
+                  "emp_job_title"
+                ]
+              },
+              {
+                "cells": [
+                  "Van",
+                  "Mac",
+                  "UI Developer"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 164000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "put call is made for updating employee",
+            "match": {
+              "location": "APISteps.PartialEmployeeUpdate.put_call_is_made_for_updating_employee()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4473000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "status code is 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 15
+                }
+              ],
+              "location": "APISteps.CreateNewEmployee.status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 41025000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "expected \"Message\" is \"Employee record updated successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Message\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"Employee record updated successfully\"",
+                  "offset": 22
+                }
+              ],
+              "location": "APISteps.PartialEmployeeUpdate.expected_is(java.lang.String,java.lang.String)"
+            },
             "keyword": "And "
           }
         ],

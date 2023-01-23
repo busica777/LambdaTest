@@ -60,7 +60,6 @@ public class CreateNewEmployee {
 				.body()
 				.jsonPath()
 				.getString(empID);
-		System.out.println(employeeID);
 		
 	}
 	

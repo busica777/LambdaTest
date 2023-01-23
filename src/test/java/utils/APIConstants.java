@@ -7,5 +7,6 @@ public interface APIConstants {
 	String GENERATE_TOKEN = baseURI + "/generateToken.php";
 	String CREATE_NEW_EMPLOYEE = baseURI + "/createEmployee.php";
 	String RETRIEVE_CREATED_EMPLOYEE = baseURI + "/getOneEmployee.php";
+	String PARTIAL_EMPLOYEE_UPDATING = baseURI + "/updatePartialEmplyeesDetails.php";
 	
 }

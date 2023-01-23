@@ -2,6 +2,11 @@ package utils;
 
 import org.json.simple.JSONObject;
 
+import java.util.List;
+import java.util.Map;
+
+import static APISteps.CreateNewEmployee.employeeID;
+
 public class APIPayload {
 	
 	public static String adminLogIn() {
@@ -22,6 +27,14 @@ public class APIPayload {
 		obj.put("emp_birthday", DOB);
 		obj.put("emp_status", empStatus);
 		obj.put("emp_job_title", jobTitle);
+		return obj.toJSONString();
+	}
+	
+	public static String partialEmployeeUpdating(io.cucumber.datatable.DataTable dataTable) {
+		List<Map<String, String>> dataToUpdate = dataTable.asMaps();
+		JSONObject obj = new JSONObject();
+		dataToUpdate.forEach(s -> s.forEach((key, value) -> obj.put(key, value)));
+		obj.put("employee_id", employeeID);
 		return obj.toJSONString();
 	}
 	

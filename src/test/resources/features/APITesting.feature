@@ -13,7 +13,7 @@ Feature: API workflow test
 
   @api
   Scenario: api test to retrieve created employee
-    Given request is prepared
+    Given request to retrieve employee is prepared
     When get call is made for retrieving employee
     Then status code is 200
     And "employee.employee_id" is match with global employee id value
@@ -21,5 +21,12 @@ Feature: API workflow test
       | emp_firstname | emp_middle_name | emp_lastname | emp_birthday | emp_gender | emp_job_title | emp_status |
       | Roger         | MS              | Gold         | 1992-08-01   | Male       | Developer     | Employee   |
 
-
+  @api
+  Scenario: api test to partially update created employee
+    Given request to update employee is prepared and body contains information for updating
+      | emp_middle_name | emp_lastname | emp_job_title |
+      | Van             | Mac          | UI Developer  |
+    When put call is made for updating employee
+    Then status code is 201
+    And expected "Message" is "Employee record updated successfully"
 
