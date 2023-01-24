@@ -50,7 +50,9 @@ public class CreateNewEmployee {
 		response.then()
 				.log()
 				.ifValidationFails()
-				.body("Message", equalTo(expectedMSG));
+				.body("Message", equalTo(expectedMSG))
+				.log()
+				.body();
 	}
 	
 	@Then("{string} is stored in global variables")

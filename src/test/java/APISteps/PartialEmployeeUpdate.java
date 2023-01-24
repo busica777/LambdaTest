@@ -25,8 +25,8 @@ public class PartialEmployeeUpdate {
 				.body(APIPayload.partialEmployeeUpdating(dataTable));
 	}
 	
-	@When("put call is made for updating employee")
-	public void put_call_is_made_for_updating_employee() {
+	@When("patch call is made for updating employee")
+	public void patch_call_is_made_for_updating_employee() {
 		response = request.when()
 				.patch(APIConstants.PARTIAL_EMPLOYEE_UPDATING);
 	}
@@ -36,7 +36,9 @@ public class PartialEmployeeUpdate {
 		response.then()
 				.log()
 				.ifValidationFails()
-				.body(MSG, equalTo(MSGValue));
+				.body(MSG, equalTo(MSGValue))
+				.log()
+				.body();
 	}
 	
 }

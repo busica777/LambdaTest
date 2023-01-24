@@ -9,11 +9,8 @@ import utils.APIConstants;
 
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.function.BiConsumer;
-import java.util.function.BiPredicate;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
+
 
 import static APISteps.CreateNewEmployee.*;
 import static io.restassured.RestAssured.given;
@@ -43,18 +40,19 @@ public class RetrieveCreatedEmployee {
 		response.then()
 				.log()
 				.ifValidationFails()
-				.body(empId, equalTo(employeeID));
+				.body(empId, equalTo(employeeID))
+				.log()
+				.body();
 	}
 	
 	@Then("{string} object data match with created employee information")
 	public void object_data_match_with_created_employee_information(String empObject,
 																	io.cucumber.datatable.DataTable dataTable) {
 		List<Map<String, String>> expectedData = dataTable.asMaps();
-		//to get all the keys and values of employee object, we use jsonPath.get method
 		Map<String, String> actualData = response.body().jsonPath().get(empObject);
 		BiConsumer<String, String> matcher = Assert::assertEquals;
 		
-		expectedData.forEach(s -> s.forEach((k, v) -> matcher.accept(v,actualData.get(k))));
+		expectedData.forEach(map -> map.forEach((k, v) -> matcher.accept(v,actualData.get(k))));
 		
 	}
 }

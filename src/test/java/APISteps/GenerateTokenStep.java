@@ -20,8 +20,11 @@ public class GenerateTokenStep {
 				.when()
 				.post(GENERATE_TOKEN)
 				.then()
-						.log().body()
-				.extract().jsonPath().getString("token");
+				.log()
+				.body()
+				.extract()
+				.jsonPath()
+				.getString("token");
 		
 	}
 }

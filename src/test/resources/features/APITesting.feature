@@ -26,7 +26,45 @@ Feature: API workflow test
     Given request to update employee is prepared and body contains information for updating
       | emp_middle_name | emp_lastname | emp_job_title |
       | Van             | Mac          | UI Developer  |
-    When put call is made for updating employee
+    When patch call is made for updating employee
     Then status code is 201
     And expected "Message" is "Employee record updated successfully"
+
+  @api
+  Scenario: api test to get all jobs title
+    Given request is prepared to get job titles
+    When get call is made
+    Then status code is 200
+    And object body contains "Jobs"
+    And content type is present
+
+  @api
+  Scenario: api test to get all employee' employment status
+    Given request is prepared to get employment status
+    When get call is prepared
+    Then status code is 200
+    And object body contains "Employeement Status"
+    And response time is no exceed 300 ms
+
+  @api
+  Scenario: api test to update full employee information
+    Given request is made to update full employee information
+      | emp_firstname | emp_lastname | emp_middle_name | emp_gender | emp_birthday | emp_status | emp_job_title |
+      | Adam          | Gurava       | RS              | M          | 1992-10-09   | employed   | QA Automation |
+    When put call is prepared
+    Then status code is 200
+    And expected "Message" contains value "Employee record Updated"
+    And updated fields match with provided information
+      | emp_firstname | emp_middle_name | emp_lastname | emp_birthday | emp_gender | emp_job_title | emp_status |
+      | Adam          | RS              | Gurava       | 1992-10-09   | Male       | QA Automation | employed   |
+
+  @api
+  Scenario: api test to delete employee
+    Given request is made to delete employee
+    When delete call is prepared
+    Then status code is 200
+    And expected "message" contains value "Employee deleted"
+    And "employee.employee_id" match with employee id in globals
+    And response time is no exceed 250 ms
+
 
