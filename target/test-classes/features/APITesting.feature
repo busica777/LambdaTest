@@ -58,13 +58,13 @@ Feature: API workflow test
       | emp_firstname | emp_middle_name | emp_lastname | emp_birthday | emp_gender | emp_job_title | emp_status |
       | Adam          | RS              | Gurava       | 1992-10-09   | Male       | QA Automation | employed   |
 
-@api
-Scenario: api test to delete employee
-  Given request is made to delete employee
-  When delete call is prepared
-  Then status code is 200
-  And expected "message" contains value "Employee deleted"
-  And "employee.employee_id" match with employee id in globals
-  And response time is no exceed 250 ms
+  @api
+  Scenario: api test to delete employee
+    Given request is made to delete employee
+    When delete call is prepared
+    Then status code is 200
+    And expected "message" contains value "Employee deleted"
+    And "employee.employee_id" match with employee id in globals
+    And response time is no exceed 250 ms
 
 
