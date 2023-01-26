@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
 		
 		
 		plugin = {"pretty", "html:target/cucumber.html", "json:target/cucumber.json",
-				"rerun:target/failed.txt"}
+				"rerun:target/failed.txt", "json:target/cucumber-reports/CucumberTestReport.json"}
 )
 public class APIRunner {
 

