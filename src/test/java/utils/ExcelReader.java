@@ -43,9 +43,6 @@ public class ExcelReader extends BaseClass {
 	public static String getCellData(int rowIndex, int colIndex){
 		return sheet.getRow(rowIndex).getCell(colIndex).toString();
 	}
-
-	
-
 	
 	public static List<Map<String, String>> excelListIntoMap
 			(String filePath, String sheetName){
