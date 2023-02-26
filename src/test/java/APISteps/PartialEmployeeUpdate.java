@@ -4,12 +4,10 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.http.ContentType;
-import org.json.simple.JSONObject;
+
 import utils.APIConstants;
 import utils.APIPayload;
 
-import java.util.List;
-import java.util.Map;
 
 import static APISteps.CreateNewEmployee.*;
 import static io.restassured.RestAssured.given;

@@ -3,8 +3,15 @@ package APISteps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.restassured.common.mapper.TypeRef;
 import io.restassured.http.ContentType;
+import io.restassured.mapper.ObjectMapper;
+import org.json.simple.JSONArray;
 import utils.APIConstants;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 import static APISteps.CreateNewEmployee.request;
 import static APISteps.CreateNewEmployee.response;
@@ -20,11 +27,11 @@ public class GetEmployeesJobTitles {
 				.accept(ContentType.JSON)
 				.auth().oauth2(GenerateTokenStep.token);
 	}
-	
 	@When("get call is made")
 	public void get_call_is_made() {
-		response = request.when()
+				response = request.when()
 				.get(APIConstants.GET_EMPLOYEE_JOB_TITLES);
+		
 	}
 	
 	@Then("object body contains {string}")
@@ -32,7 +39,9 @@ public class GetEmployeesJobTitles {
 		response.then()
 				.log()
 				.ifValidationFails()
-				.body("", hasKey(objectName));
+				.body("", hasKey(objectName))
+				.extract()
+				.body();
 	}
 	
 	@Then("content type is present")

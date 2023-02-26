@@ -7,25 +7,28 @@
     <list default="true" id="46ff00aa-ff5b-412f-ab70-09fa77c1281d" name="Changes" comment="here i added some things">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/logfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/APIRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/APIRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/SmokeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/SmokeRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/embeddings/embedding_-711582890.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/APISteps/CreateNewEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/APISteps/CreateNewEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/APISteps/GetEmployeesJobTitles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/APISteps/GetEmployeesJobTitles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/APISteps/PartialEmployeeUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/APISteps/PartialEmployeeUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/APISteps/RetrieveCreatedEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/APISteps/RetrieveCreatedEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/LambdaTest-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/LambdaTest-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-failures.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/overview-failures.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-features.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/overview-features.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-steps.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/overview-steps.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/overview-tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_1764534172.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_3206994271.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-tag_2232094606.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-tag_2232094607.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-tag_4082898728.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_1_637340913.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_1_637340913.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_637340913.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_637340913.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-tag_2149487065.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/report-tag_2149487065.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/CucumberTestReport.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/CucumberTestReport.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-runners.SmokeRunner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/runners.SmokeRunner.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/config/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-runners.APIRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-runners.APIRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/runners.APIRunner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/runners.APIRunner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/APISteps/CreateNewEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/APISteps/CreateNewEmployee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/APISteps/GetEmployeesJobTitles.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/APISteps/GetEmployeesJobTitles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/APISteps/PartialEmployeeUpdate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/APISteps/PartialEmployeeUpdate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/APISteps/RetrieveCreatedEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/APISteps/RetrieveCreatedEmployee.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,10 +159,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.DBSteps.findPersonsWhoHasSalaryBiggerThanAverage" />
-        <item itemvalue="JUnit.DBSteps.findPesonWithHighestSalary" />
-        <item itemvalue="JUnit.DBSteps.findPersonWhoHasSalaryBiggerThanAverage" />
         <item itemvalue="JUnit.APIRunner" />
         <item itemvalue="JUnit.SmokeRunner" />
+        <item itemvalue="JUnit.DBSteps.findPesonWithHighestSalary" />
+        <item itemvalue="JUnit.DBSteps.findPersonWhoHasSalaryBiggerThanAverage" />
       </list>
     </recent_temporary>
   </component>

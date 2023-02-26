@@ -11,7 +11,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.BiConsumer;
 
-
 import static APISteps.CreateNewEmployee.*;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -52,7 +51,7 @@ public class RetrieveCreatedEmployee {
 		Map<String, String> actualData = response.body().jsonPath().get(empObject);
 		BiConsumer<String, String> matcher = Assert::assertEquals;
 		
-		expectedData.forEach(map -> map.forEach((k, v) -> matcher.accept(v,actualData.get(k))));
+		expectedData.forEach(map -> map.forEach((k, v) -> matcher.accept(v, actualData.get(k))));
 		
 	}
 }
