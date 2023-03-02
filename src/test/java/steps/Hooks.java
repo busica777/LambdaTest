@@ -27,6 +27,6 @@ public class Hooks{
 		scenario.attach(pic, "image/png", scenario.getName());
 		quitBrowser();
 		
-		
 	}
+	
 }
