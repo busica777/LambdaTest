@@ -26,8 +26,6 @@ public class LogIn extends BaseClass {
 		click.accept(logInPage.getLogInButton());
 	}
 	
-	
-	
 	@Then("user navigate to My account page")
 	public void user_navigate_to_my_account_page() {
 		assertThatText.accept(ConfigReader.getPropertyValue

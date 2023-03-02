@@ -13,6 +13,8 @@ public class Hooks{
 		launchApplication.accept(driverFactory.get());
 	}
 	
+	
+	
 	@After
 	public static void postCondition(Scenario scenario){
 		byte[] pic;
