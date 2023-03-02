@@ -21,6 +21,8 @@ public class LogIn extends BaseClass {
 	}
 	
 	
+	
+	
 	@When("user click on Login button")
 	public void user_click_on_login_button() {
 		click.accept(logInPage.getLogInButton());
