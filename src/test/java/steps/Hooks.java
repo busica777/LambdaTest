@@ -13,8 +13,6 @@ public class Hooks{
 		launchApplication.accept(driverFactory.get());
 	}
 	
-	
-	
 	@After
 	public static void postCondition(Scenario scenario){
 		byte[] pic;
@@ -28,5 +26,7 @@ public class Hooks{
 		//to attach the screenshot in our report
 		scenario.attach(pic, "image/png", scenario.getName());
 		quitBrowser();
+		
+		
 	}
 }
