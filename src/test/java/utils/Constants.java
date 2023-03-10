@@ -6,4 +6,6 @@ public interface Constants {
 	int EXPLICIT_WAIT = 20;
 	String SCREENSHOT_FILEPATH = System.getProperty("user.dir") + "/screenshots/";
 	
+	
 }
+
